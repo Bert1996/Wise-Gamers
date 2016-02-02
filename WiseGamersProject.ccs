@@ -10,6 +10,7 @@
           <Image Name="Robot2.png" />
           <Image Name="CogGreen.png" />
         </Folder>
+        <Project Name="Menu.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
