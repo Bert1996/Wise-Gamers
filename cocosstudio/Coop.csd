@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.3.3.0" />
+  <PropertyGroup Name="Coop" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="2.3.3.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -28,7 +28,7 @@
             <FileData Type="Normal" Path="Resources/Robot1.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Robot2" ActionTag="1317321893" Tag="26" IconVisible="False" LeftMargin="937.1710" RightMargin="41.8290" TopMargin="629.6584" BottomMargin="54.3415" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Robot2" ActionTag="1317321893" Tag="26" IconVisible="False" LeftMargin="937.1710" RightMargin="41.8290" TopMargin="629.6585" BottomMargin="54.3415" ctype="SpriteObjectData">
             <Size X="45.0000" Y="84.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="959.6710" Y="96.3415" />
@@ -50,7 +50,7 @@
             <FileData Type="Normal" Path="Resources/CogGreen.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Grapple" ActionTag="-2044794234" Tag="28" IconVisible="False" LeftMargin="162.4539" RightMargin="815.5461" TopMargin="635.8365" BottomMargin="86.1634" ctype="SpriteObjectData">
+          <AbstractNodeData Name="Grapple" ActionTag="-2044794234" Tag="28" IconVisible="False" LeftMargin="162.4539" RightMargin="815.5461" TopMargin="635.8366" BottomMargin="86.1634" ctype="SpriteObjectData">
             <Size X="46.0000" Y="46.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="185.4539" Y="109.1634" />
