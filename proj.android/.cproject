@@ -171,14 +171,14 @@
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="WiseGamersProject.null.31159645" name="WiseGamersProject"/>
+		<project id="TGPGameScore.null.31159645" name="TGPGameScore"/>
 	</storageModule>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Default">
-			<resource resourceType="PROJECT" workspacePath="/WiseGamersProject"/>
+			<resource resourceType="PROJECT" workspacePath="/TGPGameScore"/>
 		</configuration>
 		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/WiseGamersProject"/>
+			<resource resourceType="PROJECT" workspacePath="/TGPGameScore"/>
 		</configuration>
 	</storageModule>
 </cproject>

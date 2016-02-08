@@ -2,6 +2,16 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+#include "stdio.h"
+#include "GameManager.h"
+#include <iomanip>
+
+USING_NS_CC;
+
+using namespace cocostudio::timeline;
+using namespace cocos2d;
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -13,7 +23,26 @@ public:
     virtual bool init();
 
     // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
+	CREATE_FUNC(HelloWorld);
+
+	void update(float);
+
+	Vec2 highestPos;
+
+	
+
+private:
+	cocos2d::Sprite* robot;
+	cocos2d::ui::Text* scoreLabel;	
+
+
+	bool _robotLeftSwitch;
+	bool _robotRightSwitch;
+
+	
+	bool _robotUpSwitch;
+	bool _robotDownSwitch;
+
 };
 
 #endif // __HELLOWORLD_SCENE_H__

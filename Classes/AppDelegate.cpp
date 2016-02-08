@@ -27,7 +27,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("WiseGamersProject", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("TGPGameScore", Rect(0, 0, 960, 640));
         director->setOpenGLView(glview);
     }
 

@@ -1,0 +1,31 @@
+﻿Build started 05/02/2016 16:31:10.
+     1>Project "M:\TGPGame\TGPGameScore\proj.win32\TGPGameScore.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.9\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\HelloWorldScene.cpp
+         HelloWorldScene.cpp
+     1>m:\tgpgame\tgpgamescore\classes\helloworldscene.cpp(53): warning C4996: 'cocos2d::ui::Text::setText': was declared deprecated
+                 c:\cocos\frameworks\cocos2d-x-3.9\cocos\ui\uitext.h(105) : see declaration of 'cocos2d::ui::Text::setText'
+       PreLinkEvent:
+         if not exist "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\" mkdir "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.9\prebuilt\win32\*.*" "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         60 File(s) copied
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\TGPGameScore.exe" /INCREMENTAL /NOLOGO /LIBPATH:M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\ /LIBPATH:M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\TGPGameScore.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\TGPGameScore.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\GameManager.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\main.obj
+         TGPGameScore.vcxproj -> M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\TGPGameScore.exe
+       CustomBuildStep:
+         if not exist "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\" mkdir "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\"
+         xcopy "M:\TGPGame\TGPGameScore\proj.win32\..\Resources" "M:\TGPGame\TGPGameScore\proj.win32\Debug.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         0 File(s) copied
+     1>Done Building Project "M:\TGPGame\TGPGameScore\proj.win32\TGPGameScore.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:52.92
