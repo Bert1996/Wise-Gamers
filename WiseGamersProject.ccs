@@ -10,6 +10,7 @@
           <Image Name="Robot2.png" />
           <Image Name="CogGreen.png" />
           <Image Name="lab.jpg" />
+          <Image Name="labBackground.png" />
         </Folder>
         <Project Name="Menu.csd" Type="Scene" />
         <Project Name="SinglePlayer.csd" Type="Scene" />
@@ -19,6 +20,7 @@
         <Image Name="Button.jpg" />
         <Image Name="Button1.png" />
         <Image Name="pressedbutton.png" />
+        <Image Name="Robot1.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

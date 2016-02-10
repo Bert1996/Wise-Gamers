@@ -12,7 +12,7 @@
             <Position X="-0.0001" />
             <Scale ScaleX="2.1348" ScaleY="2.3927" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" />
+            <PrePosition />
             <PreSize X="0.4688" Y="0.4167" />
             <FileData Type="Normal" Path="Resources/Background.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />

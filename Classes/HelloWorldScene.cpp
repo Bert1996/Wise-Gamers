@@ -34,7 +34,7 @@ bool HelloWorld::init()
     auto rootNode = CSLoader::createNode("Menu.csb");
 
 	//Starting Sound
-	SoundManager::PlayBackGroundMusic();
+	//SoundManager::PlayBackGroundMusic();
 	
 	//Sprites
 	cog = (Sprite*)rootNode->getChildByName("cog");
