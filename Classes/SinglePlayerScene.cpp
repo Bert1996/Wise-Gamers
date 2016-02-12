@@ -1,4 +1,7 @@
 #include "SinglePlayerScene.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+#include "stdio.h"
 #include <math.h>
 Scene* SinglePlayerScene::createScene()
 {
@@ -26,6 +29,18 @@ bool SinglePlayerScene::init()
 	cog1 = (Sprite*)rootNode->getChildByName("cog");
 	cog2 = (Sprite*)rootNode->getChildByName("cog2");
 	player = (Sprite*)rootNode->getChildByName("player");
+	background = (Sprite*)rootNode->getChildByName("labBackground1");
+	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
+	
+	//score label
+	int score = 0;	
+	__String* tempScore = __String::createWithFormat("%i", score);
+	scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
+	scoreLabel->setText(tempScore->getCString());
+
+	//scrolling tolerance for background
+	tol = 0;
+
 	_touched = false;
 	_clicked = false;
 	_alive = true;
@@ -53,6 +68,7 @@ void SinglePlayerScene::update(float)
 		cog1->setRotation(r);
 		cog2->setRotation(r);
 		CheckForClosest();
+		ScrollingBackground();
 
 		if (!_touched)
 		{
@@ -65,7 +81,11 @@ void SinglePlayerScene::update(float)
 		}
 		cogCollide();
 		resetCog();
-	}
+
+		//Display the score
+		GameManager::sharedGameManager()->AddToScore(1);
+		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+	}	
 }
 
 void SinglePlayerScene::resetCog()
@@ -237,6 +257,27 @@ bool SinglePlayerScene::CloseEnough()
 	return true;
 }
 
+static const int scrollSpeed = 5.0f;
+
+void SinglePlayerScene::ScrollingBackground()
+{
+	//scrolling background
+	Vec2 Bg1Pos = background->getPosition();
+	Vec2 Bg2Pos = background2->getPosition();
+
+	background->setPosition(Bg1Pos.x, Bg1Pos.y - scrollSpeed);
+	background2->setPosition(Bg2Pos.x, Bg2Pos.y - scrollSpeed);
+
+	if (background->getPosition().y < -390 + tol)
+	{
+		background->setPosition(Bg1Pos.x, 1100);
+	}
+
+	if (background2->getPosition().y < -390 + tol)
+	{
+		background2->setPosition(Bg2Pos.x, 1100);
+	}
+}
 
 
-
+ 

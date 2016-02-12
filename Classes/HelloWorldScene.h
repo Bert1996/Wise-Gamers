@@ -18,10 +18,18 @@ public:
 	void update(float)override;
 	cocos2d::Sprite* cog;
 
+	void ScrollingBackgroundSinglePlayer();
+
 	float r;
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+
+private:
+	cocos2d::Sprite*		background;
+	cocos2d::Sprite*		background2;
+
+	int tol;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -46,6 +46,9 @@ bool HelloWorld::init()
 
 	SinglePlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
 	{
+		//Reset Score before starting game
+		GameManager::sharedGameManager()->ResetScore();
+
 		auto mainScene = SinglePlayerScene::createScene();
 
 		switch (type)
@@ -114,5 +117,5 @@ void HelloWorld::update(float)
 {
 	r++;
 	cog->setRotation(r);
-}
 
+}

@@ -34,7 +34,6 @@
           <FilePathData Path="Coop.csd" />
           <FilePathData Path="Menu.csd" />
           <FilePathData Path="SinglePlayer.csd" />
-          <FilePathData Path="Versus.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="SinglePlayer.csd" />
       </Value>
