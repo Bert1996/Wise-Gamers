@@ -59,13 +59,13 @@
             <FileData Type="Normal" Path="Robot1.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="scoreLabel" ActionTag="-501405700" Tag="13" IconVisible="False" LeftMargin="428.7739" RightMargin="505.2261" TopMargin="368.7209" BottomMargin="376.2791" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="scoreLabel" ActionTag="-501405700" Tag="13" IconVisible="False" LeftMargin="830.6539" RightMargin="103.3461" TopMargin="173.6326" BottomMargin="571.3674" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="90.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="473.7739" Y="387.7791" />
+            <Position X="875.6539" Y="582.8674" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4627" Y="0.5049" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.8551" Y="0.7589" />
             <PreSize X="0.0879" Y="0.0299" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
