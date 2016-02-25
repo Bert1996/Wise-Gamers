@@ -1,0 +1,21 @@
+﻿Build started 12/02/2016 14:21:17.
+     1>Project "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\WiseGamersProject.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.9\prebuilt\win32\*.*" "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         60 File(s) copied
+       Link:
+         WiseGamersProject.vcxproj -> C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe
+       CustomBuildStep:
+         if not exist "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\"
+         xcopy "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\..\Resources" "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\Debug.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         0 File(s) copied
+     1>Done Building Project "C:\Users\Liam Cleary\Downloads\New folder\Wise-Gamers\proj.win32\WiseGamersProject.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.29
