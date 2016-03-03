@@ -4,7 +4,7 @@
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Scene" Tag="18" ctype="GameNodeObjectData">
-        <Size X="1024.0000" Y="768.0000" />
+        <Size X="1334.0000" Y="750.0000" />
       </ObjectData>
     </Content>
   </Content>

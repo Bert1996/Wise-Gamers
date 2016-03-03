@@ -21,6 +21,8 @@
         <Image Name="Button1.png" />
         <Image Name="pressedbutton.png" />
         <Image Name="Robot1.png" />
+        <Image Name="Bullet.png" />
+        <Image Name="Background2.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

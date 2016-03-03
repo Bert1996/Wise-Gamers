@@ -44,7 +44,7 @@ bool Cogs::init()
 	bottomCog->setPosition(startXPosition, startYPosition_bottom);
 
 	//Speed of cogs at start.
-	currentSpeed = 200.0f;
+	currentSpeed = 100.0f;
 }
 
 void Cogs::update(float delta)

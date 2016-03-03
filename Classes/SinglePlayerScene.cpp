@@ -68,12 +68,13 @@ void SinglePlayerScene::update(float)
 		cog1->setRotation(r);
 		cog2->setRotation(r);
 		CheckForClosest();
-		ScrollingBackground();
+		
 
 		if (!_touched)
 		{
 			wallCollide();
 			movePlayer();
+			ScrollingBackground();
 		}
 		else
 		{
@@ -114,16 +115,18 @@ void SinglePlayerScene::CheckForClosest()
 	Vec2 cog_1 = cog2->getPosition();
 	play -= cog;
 	play1 -= cog_1;
-
-	if (play.length() > play1.length())
+	if (!_touched)
 	{
-		_cogNumber = 2;
-		_closeCog = cog2->getPosition();
-	}
-	else
-	{
-		_cogNumber = 1;
-		_closeCog = cog1->getPosition();
+		if (play.length() > play1.length())
+		{
+			_cogNumber = 2;
+			_closeCog = cog2->getPosition();
+		}
+		else
+		{
+			_cogNumber = 1;
+			_closeCog = cog1->getPosition();
+		}
 	}
 }
 
@@ -257,10 +260,11 @@ bool SinglePlayerScene::CloseEnough()
 	return true;
 }
 
-static const int scrollSpeed = 5.0f;
+static const int scrollSpeed = 4.0f;
 
 void SinglePlayerScene::ScrollingBackground()
 {
+
 	//scrolling background
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();
