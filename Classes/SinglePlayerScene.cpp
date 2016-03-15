@@ -31,15 +31,14 @@ bool SinglePlayerScene::init()
 	player = (Sprite*)rootNode->getChildByName("player");
 	background = (Sprite*)rootNode->getChildByName("labBackground1");
 	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
-	
+	key = (Sprite*)rootNode->getChildByName("key");
+
 	//score label
 	int score = 0;	
+	_scrollSpeed = 4.0f;
 	__String* tempScore = __String::createWithFormat("%i", score);
 	scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
 	scoreLabel->setText(tempScore->getCString());
-
-	//scrolling tolerance for background
-	tol = 0;
 
 	_touched = false;
 	_clicked = false;
@@ -80,7 +79,7 @@ void SinglePlayerScene::update(float)
 		{
 			playerSpin();
 		}
-		cogCollide();
+		//cogCollide();
 		resetCog();
 
 		//Display the score
@@ -260,28 +259,52 @@ bool SinglePlayerScene::CloseEnough()
 	return true;
 }
 
-static const int scrollSpeed = 4.0f;
-
 void SinglePlayerScene::ScrollingBackground()
 {
+	auto size = Director::getInstance()->getVisibleSize();
 
 	//scrolling background
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();
 
-	background->setPosition(Bg1Pos.x, Bg1Pos.y - scrollSpeed);
-	background2->setPosition(Bg2Pos.x, Bg2Pos.y - scrollSpeed);
+	background->setPosition(Bg1Pos.x, Bg1Pos.y - _scrollSpeed);
+	background2->setPosition(Bg2Pos.x, Bg2Pos.y - _scrollSpeed);
 
-	if (background->getPosition().y < -390 + tol)
+	if (background->getPosition().y < 0)
 	{
-		background->setPosition(Bg1Pos.x, 1100);
+		background->setPosition(Bg1Pos.x, size.height * 2);
 	}
 
-	if (background2->getPosition().y < -390 + tol)
+	if (background2->getPosition().y < 0)
 	{
-		background2->setPosition(Bg2Pos.x, 1100);
+		background2->setPosition(Bg2Pos.x, size.height * 2);
 	}
 }
 
+void SinglePlayerScene::keyCollision()
+{
+	if (player->getBoundingBox().intersectsRect(key->getBoundingBox()))
+	{
+		if (levelState = level1)
+			{
+				Level2();
+				cocos2d::log("key collide - move onto level2");
+			}
+		else if (levelState = level2)
+		{
+			Level3();
+			cocos2d::log("key collide - move onto next level3");
+		}
+	}
+}
 
+void SinglePlayerScene::Level2()
+{
+
+}
+
+void SinglePlayerScene::Level3()
+{
+
+}
  

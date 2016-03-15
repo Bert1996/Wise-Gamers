@@ -27,13 +27,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-		glview = GLViewImpl::createWithRect("WiseGamersProject", Rect(0, 0, 960, 640)); //don't change - doesn't scale relative to this, scales relative to screen dimensions -played in  // 1334 * 750
+		glview = GLViewImpl::createWithRect("WiseGamersProject", Rect(0, 0, 1334, 750)); //don't change - doesn't scale relative to this, scales relative to screen dimensions -played in  // 1334 * 750
         director->setOpenGLView(glview);
     }
 
-	float width = Director::getInstance()->getOpenGLView()->getFrameSize().width;
-
-	director->getOpenGLView()->setDesignResolutionSize(960, 640, ResolutionPolicy::SHOW_ALL);
+	director->getOpenGLView()->setDesignResolutionSize(1334, 750, ResolutionPolicy::SHOW_ALL);
 
     // turn on display FPS
     director->setDisplayStats(true);

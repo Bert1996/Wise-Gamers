@@ -1,26 +1,12 @@
-﻿Build started 23/02/2016 12:49:12.
+﻿Build started 10/03/2016 16:17:26.
      1>Project "C:\Student Temporary Folder\Wise-Gamers\proj.win32\WiseGamersProject.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.9\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp
-         AppDelegate.cpp
-     1>c:\student temporary folder\wise-gamers\classes\appdelegate.cpp(42): warning C4305: 'argument' : truncation from 'double' to 'float'
-       PreLinkEvent:
+     1>PreLinkEvent:
          if not exist "C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\"
          xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.9\prebuilt\win32\*.*" "C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\"
          
          :VCEnd
          60 File(s) copied
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\\" /LIBPATH:"C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\\" opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
-         Debug.win32\AppDelegate.obj
-         Debug.win32\Cogs.obj
-         Debug.win32\CoopScene.obj
-         Debug.win32\GameManager.obj
-         Debug.win32\HelloWorldScene.obj
-         Debug.win32\SinglePlayerScene.obj
-         Debug.win32\SoundManager.obj
-         Debug.win32\VersusScene.obj
-         Debug.win32\main.obj
          WiseGamersProject.vcxproj -> C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe
        CustomBuildStep:
          if not exist "C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Student Temporary Folder\Wise-Gamers\proj.win32\Debug.win32\"
@@ -32,4 +18,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.58
+Time Elapsed 00:00:00.92

@@ -23,6 +23,10 @@
         <Image Name="Robot1.png" />
         <Image Name="Bullet.png" />
         <Image Name="Background2.png" />
+        <Image Name="secret_key.png" />
+        <Project Name="Level 2.csd" Type="Scene" />
+        <Project Name="Level 3.csd" Type="Scene" />
+        <Image Name="Background3.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

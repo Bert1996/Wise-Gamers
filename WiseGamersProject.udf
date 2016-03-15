@@ -33,9 +33,12 @@
         <OpenedDocuments>
           <FilePathData Path="Coop.csd" />
           <FilePathData Path="Menu.csd" />
+          <FilePathData Path="Level 3.csd" />
+          <FilePathData Path="Level 2.csd" />
           <FilePathData Path="SinglePlayer.csd" />
+          <FilePathData Path="Versus.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="SinglePlayer.csd" />
+        <ActiveDocument Path="Versus.csd" />
       </Value>
     </Item>
   </Properties>
