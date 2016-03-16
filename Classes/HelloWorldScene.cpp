@@ -1,12 +1,10 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-#include "stdio.h"
 
 USING_NS_CC;
 
 using namespace cocostudio::timeline;
-using namespace cocos2d;
 
 Scene* HelloWorld::createScene()
 {
@@ -33,90 +31,91 @@ bool HelloWorld::init()
         return false;
     }
     
-    auto rootNode = CSLoader::createNode("MainScene.csb");
+    auto rootNode = CSLoader::createNode("Menu.csb");
 
+	//Starting Sound
+	SoundManager::PlayBackGroundMusic();
+	
+	//Sprites
+	cog = (Sprite*)rootNode->getChildByName("cog");
+
+	//Main Menu Buttons
+	auto SinglePlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("SinglePlayer");
+	auto CoopPlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("Co-op");
+	auto VersusPlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("Versus");
+
+	SinglePlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+	{
+		//Reset Score before starting game
+		GameManager::sharedGameManager()->ResetScore();
+
+		auto mainScene = SinglePlayerScene::createScene();
+
+		switch (type)
+		{
+
+		case ui::Widget::TouchEventType::BEGAN:
+			SoundManager::PlayButtonSound();
+			break;
+		case ui::Widget::TouchEventType::ENDED:
+
+			CCDirector::getInstance()->replaceScene(mainScene);
+
+			break;
+		default:
+			break;
+		}
+	});
+
+	CoopPlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+	{
+		auto mainScene = CoopScene::createScene();
+
+		switch (type)
+		{
+
+		case ui::Widget::TouchEventType::BEGAN:
+			SoundManager::PlayButtonSound();
+			break;
+		case ui::Widget::TouchEventType::ENDED:
+			
+			CCDirector::getInstance()->replaceScene(mainScene);
+
+			break;
+		default:
+			break;
+		}
+	});
+
+	VersusPlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+	{
+		auto mainScene = VersusScene::createScene();
+
+		switch (type)
+		{
+
+		case ui::Widget::TouchEventType::BEGAN:
+			SoundManager::PlayButtonSound();
+			break;
+		case ui::Widget::TouchEventType::ENDED:
+
+			CCDirector::getInstance()->replaceScene(mainScene);
+
+			break;
+		default:
+			break;
+		}
+	});
+
+	r = 0.0f;
     addChild(rootNode);
-
 	this->scheduleUpdate();
-
-	auto winSize = Director::getInstance()->getVisibleSize();
-
-	//robot
-	robot = (Sprite*)rootNode->getChildByName("Robot");
-
-
-	int score = 0;
-	//score label
-	__String* tempScore = __String::createWithFormat("%i", score);
-
-	scoreLabel = (ui::Text*)rootNode->getChildByName("ScoreLabel");
-	scoreLabel->setText(tempScore->getCString());	
-
-
-	highestPos = robot->getPosition();
-
     return true;
 }
 
-void HelloWorld::update(float deltaTime)
+void HelloWorld::update(float)
 {
-	Vec2 currentPos = robot->getPosition();		
+	r++;
+	cog->setRotation(r);
 
-	if (GetAsyncKeyState(0x26) && _robotUpSwitch)
-	{
-		_robotUpSwitch = false;
-		robot->setPosition(currentPos.x, currentPos.y +1);
-	}
-
-	if (!GetAsyncKeyState(0x26))
-	{
-		_robotUpSwitch = true;
-	}
-	
-	if (GetAsyncKeyState(0x28) && _robotDownSwitch)
-	{
-		_robotDownSwitch = false;
-		robot->setPosition(currentPos.x, currentPos.y - 1);
-	}
-
-	if (!GetAsyncKeyState(0x28))
-	{
-		_robotDownSwitch = true;
-	}
-
-	if (GetAsyncKeyState(0x25) && _robotLeftSwitch)
-	{
-		_robotLeftSwitch = false;
-		robot->setPosition(currentPos.x -1, currentPos.y);
-	}
-
-	if (!GetAsyncKeyState(0x25))
-	{
-		_robotLeftSwitch = true;
-	}
-
-	if (GetAsyncKeyState(0x27) && _robotRightSwitch)
-	{
-		_robotRightSwitch = false;
-		robot->setPosition(currentPos.x + 1, currentPos.y);
-	}
-
-	if (!GetAsyncKeyState(0x27))
-	{
-		_robotRightSwitch = true;
-	}
-
-	//Display the score
-	if (currentPos.y > highestPos.y)
-	{
-		GameManager::sharedGameManager()->AddToScore(1);
-		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
-		highestPos.y = currentPos.y;
-	}	
-
-	//GameManager::sharedGameManager()->AddToScore(1);
-	//scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
-	
 }
-
-
