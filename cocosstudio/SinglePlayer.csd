@@ -70,15 +70,15 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cog_dangerous" ActionTag="-794935687" Tag="14" IconVisible="False" LeftMargin="408.1935" RightMargin="721.8065" TopMargin="-423.7397" BottomMargin="969.7397" ctype="SpriteObjectData">
-            <Size X="204.0000" Y="204.0000" />
+          <AbstractNodeData Name="cog_cantGrappel" ActionTag="-794935687" Tag="14" IconVisible="False" LeftMargin="500.6910" RightMargin="814.3090" TopMargin="-331.2334" BottomMargin="1062.2334" ctype="SpriteObjectData">
+            <Size X="19.0000" Y="19.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="510.1935" Y="1071.7397" />
-            <Scale ScaleX="0.2984" ScaleY="0.2984" />
+            <Position X="510.1910" Y="1071.7334" />
+            <Scale ScaleX="2.9581" ScaleY="2.8821" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.3825" Y="1.4290" />
-            <PreSize X="0.1529" Y="0.2720" />
-            <FileData Type="Normal" Path="cog.jpg" Plist="" />
+            <PreSize X="0.0142" Y="0.0253" />
+            <FileData Type="Normal" Path="CogRed.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
