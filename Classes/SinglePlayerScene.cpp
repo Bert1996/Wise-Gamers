@@ -136,18 +136,17 @@ void SinglePlayerScene::CheckForClosest()
 	play2 -= Saw;
 	if (!_touched)
 	{
-		if (play.length() > play1.length() && play2.length())
-		{
-			_cogNumber = 2;
-			_closeCog = cog2->getPosition();
-		}
-		else if (play1.length() > play2.length())
+		if (play.length() < play1.length() && play2.length())
 		{
 			_cogNumber = 1;
 			_closeCog = cog1->getPosition();
 		}
-
-		else
+		else if (play1.length() < play.length() && play2.length())
+		{
+			_cogNumber = 1;
+			_closeCog = cog2->getPosition();
+		}
+		else if (play2.length() < play.length() && play1.length())
 		{
 			_cogNumber = 3;
 			_closeCog = saw->getPosition();
