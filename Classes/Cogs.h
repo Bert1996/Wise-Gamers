@@ -20,12 +20,14 @@ public:
 private:
 	cocos2d::Sprite* topCog;
 	cocos2d::Sprite* bottomCog;
-	cocos2d::Sprite* dangerousCog;
+	cocos2d::Sprite* cantGrappelCog;
+	cocos2d::Sprite* saw;
 
 	float            startXPosition;
 	float            startYPosition_top;
 	float            startYPosition_bottom;
-	float            startYPosition_dangerous;
+	float            startYPosition_cantGrappelCog;
+	float            startYPosition_saw;
 	float            currentSpeed;
 
 

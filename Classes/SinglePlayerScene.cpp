@@ -28,7 +28,8 @@ bool SinglePlayerScene::init()
 	auto rootNode = CSLoader::createNode("SinglePlayer.csb");
 	cog1 = (Sprite*)rootNode->getChildByName("cog");
 	cog2 = (Sprite*)rootNode->getChildByName("cog2");
-	cog_dangerous = (Sprite*)rootNode->getChildByName("cog_dangerous");
+	cog_cantGrappel = (Sprite*)rootNode->getChildByName("cog_cantGrappel");
+	saw = (Sprite*)rootNode->getChildByName("saw");
 	player = (Sprite*)rootNode->getChildByName("player");
 	background = (Sprite*)rootNode->getChildByName("labBackground1");
 	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
@@ -68,7 +69,8 @@ void SinglePlayerScene::update(float)
 		r++;
 		cog1->setRotation(r);
 		cog2->setRotation(r);
-		cog_dangerous->setRotation(r);
+		cog_cantGrappel->setRotation(r);
+		saw->setRotation(r);
 		CheckForClosest();
 		
 
@@ -107,9 +109,15 @@ void SinglePlayerScene::resetCog()
 		_clicked = false;
 	}
 
-	if (cog_dangerous->getPosition().y < 0.0f)
+	if (cog_cantGrappel->getPosition().y < 0.0f)
 	{
-		cog_dangerous->setPosition(randomX, 800);
+		cog_cantGrappel->setPosition(randomX, 800);
+		_clicked = false;
+	}
+
+	if (saw->getPosition().y < 0.0f)
+	{
+		saw->setPosition(randomX, 800);
 		_clicked = false;
 	}
 	
@@ -119,21 +127,30 @@ void SinglePlayerScene::CheckForClosest()
 {
 	Vec2 play = player->getPosition();
 	Vec2 play1 = player->getPosition();
+	Vec2 play2 = player->getPosition();
 	Vec2 cog = cog1->getPosition();
 	Vec2 cog_1 = cog2->getPosition();
+	Vec2 Saw = saw->getPosition();
 	play -= cog;
 	play1 -= cog_1;
+	play2 -= Saw;
 	if (!_touched)
 	{
-		if (play.length() > play1.length())
+		if (play.length() > play1.length() && play2.length())
 		{
 			_cogNumber = 2;
 			_closeCog = cog2->getPosition();
 		}
-		else
+		else if (play1.length() > play2.length())
 		{
 			_cogNumber = 1;
 			_closeCog = cog1->getPosition();
+		}
+
+		else
+		{
+			_cogNumber = 3;
+			_closeCog = saw->getPosition();
 		}
 	}
 }
@@ -173,7 +190,13 @@ void SinglePlayerScene::cogCollide()
 		cocos2d::log("cog collide");
 	}
 
-	if (player->getBoundingBox().intersectsRect(cog_dangerous->getBoundingBox()))
+	if (player->getBoundingBox().intersectsRect(cog_cantGrappel->getBoundingBox()))
+	{
+		_alive = false;
+		cocos2d::log("cog collide");
+	}
+
+	if (player->getBoundingBox().intersectsRect(saw->getBoundingBox()))
 	{
 		_alive = false;
 		cocos2d::log("cog collide");
@@ -250,7 +273,8 @@ void SinglePlayerScene::movePlayer()
 	player->setPosition(player->getPosition().x + (dirVector.x * 4), player->getPosition().y); //+// (dirVector.y*4));
 	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 4.0f);
 	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 4.0f);
-	cog_dangerous->setPosition(cog_dangerous->getPosition().x, cog_dangerous->getPosition().y - 4.0f);
+	cog_cantGrappel->setPosition(cog_cantGrappel->getPosition().x, cog_cantGrappel->getPosition().y - 4.0f);
+	saw->setPosition(saw->getPosition().x, saw->getPosition().y - 4.0f);
 	if (player->getPosition().y != 146.0f && player->getPosition().y > 146.0f)
 	{
 		player->setPosition(player->getPosition().x, player->getPosition().y - 1.0f);

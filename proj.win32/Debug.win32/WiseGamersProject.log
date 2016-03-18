@@ -1,18 +1,23 @@
-﻿Build started 16/03/2016 15:55:56.
-     1>Project "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\WiseGamersProject.vcxproj" on node 2 (Build target(s)).
+﻿Build started 17/03/2016 23:58:54.
+     1>Project "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\WiseGamersProject.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.9\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\SinglePlayerScene.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external" /I"C:\Cocos\frameworks\cocos2d-x-3.9\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.9\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\frameworks\cocos2d-x-3.9\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\Cogs.cpp ..\Classes\HelloWorldScene.cpp ..\Classes\SinglePlayerScene.cpp
+         AppDelegate.cpp
+         Cogs.cpp
+         HelloWorldScene.cpp
          SinglePlayerScene.cpp
-     1>m:\year 2\technical games production\game\wise-gamers-master\classes\singleplayerscene.cpp(40): warning C4996: 'cocos2d::ui::Text::setText': was declared deprecated
+     1>c:\users\liam cleary\documents\github\wise-gamers\wise-gamers\classes\appdelegate.cpp(42): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\liam cleary\documents\github\wise-gamers\wise-gamers\classes\singleplayerscene.cpp(41): warning C4996: 'cocos2d::ui::Text::setText': was declared deprecated
                  c:\cocos\frameworks\cocos2d-x-3.9\cocos\ui\uitext.h(105) : see declaration of 'cocos2d::ui::Text::setText'
+     1>c:\users\liam cleary\documents\github\wise-gamers\wise-gamers\classes\cogs.cpp(54): warning C4715: 'Cogs::init' : not all control paths return a value
        PreLinkEvent:
-         if not exist "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\" mkdir "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\"
-         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.9\prebuilt\win32\*.*" "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\"
+         if not exist "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.9\prebuilt\win32\*.*" "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\"
          
          :VCEnd
          60 File(s) copied
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\WiseGamersProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:"M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\\" /LIBPATH:"M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\\" opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\WiseGamersProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\WiseGamersProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\\" /LIBPATH:"C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\\" opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
          Debug.win32\AppDelegate.obj
          Debug.win32\Cogs.obj
          Debug.win32\CoopScene.obj
@@ -22,15 +27,19 @@
          Debug.win32\SoundManager.obj
          Debug.win32\VersusScene.obj
          Debug.win32\main.obj
-         WiseGamersProject.vcxproj -> M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\WiseGamersProject.exe
+         WiseGamersProject.vcxproj -> C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe
        CustomBuildStep:
-         if not exist "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\" mkdir "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\"
-         xcopy "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\..\Resources" "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\Debug.win32\" /D /E /I /F /Y
+         if not exist "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\" mkdir "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\"
+         xcopy "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\..\Resources" "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\" /D /E /I /F /Y
                
          :VCEnd
-         0 File(s) copied
-     1>Done Building Project "M:\Year 2\Technical Games Production\Game\Wise-Gamers-master\proj.win32\WiseGamersProject.vcxproj" (Build target(s)).
+         C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\Resources\res\Coop.csb -> C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\res\Coop.csb
+         C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\Resources\res\Menu.csb -> C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\res\Menu.csb
+         C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\Resources\res\SinglePlayer.csb -> C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\res\SinglePlayer.csb
+         C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\Resources\res\Versus.csb -> C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\Debug.win32\res\Versus.csb
+         4 File(s) copied
+     1>Done Building Project "C:\Users\Liam Cleary\Documents\GitHub\Wise-Gamers\Wise-Gamers\proj.win32\WiseGamersProject.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:56.88
+Time Elapsed 00:00:11.81

@@ -81,6 +81,17 @@
             <FileData Type="Normal" Path="CogRed.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
+          <AbstractNodeData Name="saw" ActionTag="1957455623" Tag="15" IconVisible="False" LeftMargin="428.2635" RightMargin="701.7365" TopMargin="114.5600" BottomMargin="431.4400" ctype="SpriteObjectData">
+            <Size X="204.0000" Y="204.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="530.2635" Y="533.4400" />
+            <Scale ScaleX="0.2984" ScaleY="0.2984" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.3975" Y="0.7113" />
+            <PreSize X="0.1529" Y="0.2720" />
+            <FileData Type="Normal" Path="cog.jpg" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

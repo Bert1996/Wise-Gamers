@@ -36,15 +36,18 @@ bool Cogs::init()
 
 	topCog = (Sprite*)rootNode->getChildByName("topCog");
 	bottomCog = (Sprite*)rootNode->getChildByName("bottomCog");
-	dangerousCog = (Sprite*)rootNode->getChildByName("cog_dangerous");
+	cantGrappelCog = (Sprite*)rootNode->getChildByName("cog_cantGrappel");
+	saw = (Sprite*)rootNode->getChildByName("saw");
 
 	startXPosition = winSize.width;
 	startYPosition_top = topCog->getPositionY();
 	startYPosition_bottom = bottomCog->getPositionY();
-	startYPosition_dangerous = bottomCog->getPositionY();
+	startYPosition_cantGrappelCog = bottomCog->getPositionY();
+	startYPosition_saw = bottomCog->getPositionY();
 	topCog->setPosition(startXPosition, startYPosition_top);
 	bottomCog->setPosition(startXPosition, startYPosition_bottom);
-	dangerousCog->setPosition(startXPosition, startYPosition_dangerous);
+	cantGrappelCog->setPosition(startXPosition, startYPosition_cantGrappelCog);
+	saw->setPosition(startXPosition, startYPosition_saw);
 
 	//Speed of cogs at start.
 	currentSpeed = 100.0f;
@@ -61,8 +64,11 @@ void Cogs::update(float delta)
 	Vec2 currentBottomPos = bottomCog->getPosition();
 	bottomCog->setPosition(currentBottomPos.x - currentSpeed*delta, currentBottomPos.y);
 
-	Vec2 currentdangerousPos = dangerousCog->getPosition();
-	dangerousCog->setPosition(currentdangerousPos.x - currentSpeed*delta, currentdangerousPos.y);
+	Vec2 currentCantGrappelCogPos = cantGrappelCog->getPosition();
+	cantGrappelCog->setPosition(currentCantGrappelCogPos.x - currentSpeed*delta, currentCantGrappelCogPos.y);
+
+	Vec2 currentSawPos = saw->getPosition();
+	saw->setPosition(currentBottomPos.x - currentSpeed*delta, currentBottomPos.y);
 
 	if (currentTopPos.x < -bottomCog->getBoundingBox().size.width*0.3f)
 	{
@@ -74,7 +80,8 @@ void Cogs::update(float delta)
 		//Set the new positionings.
 		topCog->setPosition(newXPos, currentTopPos.y - yOffset);
 		bottomCog->setPosition(newXPos, currentBottomPos.y - yOffset);
-		dangerousCog->setPosition(newXPos, currentdangerousPos.y - yOffset);
+		cantGrappelCog->setPosition(newXPos, currentCantGrappelCogPos.y - yOffset);
+		saw->setPosition(newXPos, currentBottomPos.y - yOffset);
 
 		//Increase the speed of the cogs each time they are repositioned.
 		currentSpeed += 10.0f;
@@ -96,7 +103,8 @@ void Cogs::reset()
 {
 	topCog->setPosition(startXPosition, startYPosition_top);
 	bottomCog->setPosition(startXPosition, startYPosition_bottom);
-	dangerousCog->setPosition(startXPosition, startYPosition_dangerous);
+	cantGrappelCog->setPosition(startXPosition, startYPosition_cantGrappelCog);
+	saw->setPosition(startXPosition, startYPosition_bottom);
 
 	currentSpeed = 200.0f;
 }

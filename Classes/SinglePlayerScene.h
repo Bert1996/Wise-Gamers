@@ -18,7 +18,8 @@ public:
 	void ScrollingBackground();
 	cocos2d::Sprite* cog1;
 	cocos2d::Sprite* cog2;
-	cocos2d::Sprite* cog_dangerous;
+	cocos2d::Sprite* cog_cantGrappel;
+	cocos2d::Sprite* saw;
 	cocos2d::Sprite* player;
 	cocos2d::Sprite*		background;
 	cocos2d::Sprite*		background2;
