@@ -13,7 +13,6 @@ public:
 
 	static cocos2d::Scene* createScene();
 	CREATE_FUNC(SinglePlayerScene);
-
 private:
 
 	cocos2d::ui::Text* scoreLabel;
@@ -21,22 +20,19 @@ private:
 	virtual bool init();
 	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
-	void resetCog();
+	void resetCog(int cogNum);
 	void CheckForClosest();
 	void ScrollingBackground();
 	void cogCollide();
 	void wallCollide();
 	void playerSpin();
 	void movePlayer();
-	void keyCollision();
-	void Level2();
-	void Level3();
 	bool CloseEnough();
+	void SetRobotRotation();
 
 	cocos2d::Sprite* cog1;
 	cocos2d::Sprite* cog2;
 	cocos2d::Sprite* player;
-	cocos2d::Sprite* key;
 	cocos2d::Sprite* background;
 	cocos2d::Sprite* background2;
 
@@ -45,9 +41,9 @@ private:
 	bool _touched;
 	bool _clockwise;
 	bool _clicked;
+	bool flipped;
 	bool _alive;
 	int _cogNumber;
-	float r = 0;;
-	float sr = 0;
+	float r = 0;
 	float _scrollSpeed;
 };

@@ -26,27 +26,30 @@ bool SinglePlayerScene::init()
 	}
 
 	auto rootNode = CSLoader::createNode("SinglePlayer.csb");
+
+	//Sprite Inits
 	cog1 = (Sprite*)rootNode->getChildByName("cog");
 	cog2 = (Sprite*)rootNode->getChildByName("cog2");
 	player = (Sprite*)rootNode->getChildByName("player");
 	background = (Sprite*)rootNode->getChildByName("labBackground1");
 	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
-	key = (Sprite*)rootNode->getChildByName("key");
 
 	//score label
-	int score = 0;	
+	int score = 0;
 	_scrollSpeed = 4.0f;
 	__String* tempScore = __String::createWithFormat("%i", score);
 	scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
 	scoreLabel->setText(tempScore->getCString());
 
+	//Varable Inits
 	_touched = false;
 	_clicked = false;
 	_alive = true;
+	flipped = false;
 	_cogNumber = 0;
-	dirVector =  Vec2(0.0f, 0.0f);
+	dirVector = Vec2(0.0f, 0.0f);
 	_closeCog = cog1->getPosition();
-	//player->setPosition(449.57, 146.03);
+
 	// Touch Listener
 	auto touchListener = EventListenerTouchOneByOne::create();
 	touchListener->onTouchBegan = CC_CALLBACK_2(SinglePlayerScene::onTouchBegan, this);
@@ -67,11 +70,11 @@ void SinglePlayerScene::update(float)
 		cog1->setRotation(r);
 		cog2->setRotation(r);
 		CheckForClosest();
-		
+		//cogCollide();
 
 		if (!_touched)
 		{
-			wallCollide();
+			//wallCollide();
 			movePlayer();
 			ScrollingBackground();
 		}
@@ -79,31 +82,41 @@ void SinglePlayerScene::update(float)
 		{
 			playerSpin();
 		}
-		//cogCollide();
-		resetCog();
 
+		if (cog1->getPosition().y < 0.0f)
+		{
+			resetCog(1);
+		}
+		if (cog2->getPosition().y < 0.0f)
+		{
+			resetCog(2);
+		}
 		//Display the score
 		GameManager::sharedGameManager()->AddToScore(1);
 		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
-	}	
+	}
 }
 
-void SinglePlayerScene::resetCog()
+void SinglePlayerScene::resetCog(int cogNum)
 {
+	auto size = Director::getInstance()->getVisibleSize();
+	int leftWall = (size.width / 100, 30);
+	int rightWall = ((size.width / 100) );
+
 	RandomHelper rand = RandomHelper();
-	int randomX = rand.random_int(335, 676);
-	if (cog1->getPosition().y < 0.0f)
+	int randomX = rand.random_int(leftWall, rightWall);
+
+	if (cogNum == 1)
 	{
-		cog1->setPosition(randomX, 800);
+		cog1->setPosition(randomX, size.height);
 		_clicked = false;
 	}
 
-	if (cog2->getPosition().y < 0.0f)
+	else
 	{
-		cog2->setPosition(randomX, 800);
+		cog2->setPosition(randomX, size.height);
 		_clicked = false;
 	}
-	
 }
 
 void SinglePlayerScene::CheckForClosest()
@@ -132,16 +145,31 @@ void SinglePlayerScene::CheckForClosest()
 bool SinglePlayerScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 	cocos2d::log("touch began");
 	if (player->getPosition().x > _closeCog.x)
+	{
 		_clockwise = false;
+		if (flipped == false)
+		{
+			float flip = player->getScaleY() - 1;
+			player->setScaleY(flip);
+			flipped = true;
+		}
+	}
 	else
+	{
 		_clockwise = true;
+		if (flipped == true)
+		{
+			float flip = player->getScaleY() - 1;
+			player->setScaleY(flip);
+			flipped = false;
+		}
 
-
-
-	if(!_clicked && CloseEnough())
+	}
+	if (!_clicked && CloseEnough())
 		_touched = true;
 
 	_clicked = true;
+
 	return true;
 }
 
@@ -167,9 +195,13 @@ void SinglePlayerScene::cogCollide()
 
 void SinglePlayerScene::wallCollide()
 {
+	auto size = Director::getInstance()->getVisibleSize(); //27 ! 72
+	float leftWall = (size.width / 100, 27);
+	float rightWall = (size.width / 100, 72);
+
 	Vec2 play = player->getPosition();
 
-	if (play.x < 262 || play.x > 746)
+	if (play.x < leftWall || play.x > rightWall)
 	{
 		//MASSIVE EXPLOSION AND HORN SOUNDS
 		_alive = false;
@@ -179,37 +211,37 @@ void SinglePlayerScene::wallCollide()
 
 void SinglePlayerScene::playerSpin()
 {
+	float s = sin(0.1);
+	float c = cos(0.1);
+
+	Vec2 point = _closeCog;
+	Vec2 Player = player->getPosition();
+	Vec2 playerpos = Player;
+
+	playerpos -= point;
+
 	if (!_clockwise)
 	{
 		//AntiClockwise Spin
-		
-		float s = sin(0.1);
-		float c = cos(0.1);
-
-		Vec2 point = _closeCog;
-		Vec2 playerpos = player->getPosition();
-
-		playerpos -= point;
-
 		float x = playerpos.x * c - playerpos.y * s;
 		float y = playerpos.x * s + playerpos.y * c;
 
 		playerpos.x = x + point.x;
 		playerpos.y = y + point.y;
 
+
+		if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
+		{
+			playerpos.x -= 20.0f;
+		}
+
 		player->setPosition(playerpos);
-		player->setRotation(sr -= 5.5);
+		SetRobotRotation();
+
 	}
 	else
 	{
 		//Clockwise Spin
-		float s = sin(0.1);
-		float c = cos(0.1);
-
-		Vec2 point = _closeCog;
-		Vec2 playerpos = player->getPosition();
-
-		playerpos -= point;
 
 		float x = playerpos.x * c + playerpos.y * s;
 		float y = -playerpos.x * s + playerpos.y * c;
@@ -217,32 +249,51 @@ void SinglePlayerScene::playerSpin()
 		playerpos.x = x + point.x;
 		playerpos.y = y + point.y;
 
+		if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
+		{
+			playerpos.x -= 20.0f;
+		}
 
 		player->setPosition(playerpos);
-		player->setRotation(sr += 5.5);
+		SetRobotRotation();
 	}
-
 }
 
 void SinglePlayerScene::movePlayer()
 {
-	dirVector.y = (float)cos(CC_DEGREES_TO_RADIANS(sr));
-	dirVector.x = (float)sin(CC_DEGREES_TO_RADIANS(sr));
+	auto size = Director::getInstance()->getVisibleSize();
+	float moveY = ((size.height / 100) * 19);
+
+	//Player Movement
+	//x
+	float rot = cos(CC_DEGREES_TO_RADIANS(player->getRotation() - 90));
+
 	if (dirVector.length() > 0)
 	{
 		dirVector.normalize();
 	}
-	player->setPosition(player->getPosition().x + (dirVector.x * 4), player->getPosition().y); //+// (dirVector.y*4));
-	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 4.0f);
-	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 4.0f);
-	if (player->getPosition().y != 146.0f && player->getPosition().y > 146.0f)
+
+	if (!flipped)
+		player->setPosition(player->getPosition().x + (rot * 4), player->getPosition().y);
+
+	if (flipped)
+	{
+		player->setPosition(player->getPosition().x + -(rot * 4), player->getPosition().y);
+	}
+
+	//y
+	if (player->getPosition().y != moveY && player->getPosition().y > moveY) //19% of size.y
 	{
 		player->setPosition(player->getPosition().x, player->getPosition().y - 1.0f);
 	}
-	if (player->getPosition().y != 146.0f && player->getPosition().y < 146.0f)
+	if (player->getPosition().y != moveY && player->getPosition().y < moveY)
 	{
 		player->setPosition(player->getPosition().x, player->getPosition().y + 1.0f);
 	}
+
+	//Cog Movement
+	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 4.0f);
+	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 4.0f);
 }
 
 bool SinglePlayerScene::CloseEnough()
@@ -281,30 +332,13 @@ void SinglePlayerScene::ScrollingBackground()
 	}
 }
 
-void SinglePlayerScene::keyCollision()
+void SinglePlayerScene::SetRobotRotation()
 {
-	if (player->getBoundingBox().intersectsRect(key->getBoundingBox()))
-	{
-		if (levelState = level1)
-			{
-				Level2();
-				cocos2d::log("key collide - move onto level2");
-			}
-		else if (levelState = level2)
-		{
-			Level3();
-			cocos2d::log("key collide - move onto next level3");
-		}
-	}
+	Vec2 cog = _closeCog;
+	Vec2 play = player->getPosition();
+
+	float angle = atan2(cog.y - play.y, cog.x - play.x);
+	angle = CC_RADIANS_TO_DEGREES(angle);
+
+	player->setRotation(-angle);
 }
-
-void SinglePlayerScene::Level2()
-{
-
-}
-
-void SinglePlayerScene::Level3()
-{
-
-}
- 
