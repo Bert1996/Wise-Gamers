@@ -3,6 +3,9 @@
 
 #include "cocos2d.h"
 #include "SoundManager.h"
+#include "SinglePlayerScene.h"
+#include "CoopScene.h"
+#include "VersusScene.h"
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -12,9 +15,20 @@ public:
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
+	void update(float)override;
+	cocos2d::Sprite* cog;
+
+
+	float r;
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+
+private:
+	cocos2d::Sprite*		background;
+	cocos2d::Sprite*		background2;
+
+	int tol;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

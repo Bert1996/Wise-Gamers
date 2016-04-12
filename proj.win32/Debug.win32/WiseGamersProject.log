@@ -1,7 +1,1 @@
-﻿  AppDelegate.cpp
-  HelloWorldScene.cpp
-  SoundManager.cpp
-d:\documents\university\tgpgroupproject\wise-gamers\classes\appdelegate.cpp(40): warning C4305: 'argument': truncation from 'double' to 'float'
-  60 File(s) copied
-  WiseGamersProject.vcxproj -> D:\Documents\University\TGPGroupProject\Wise-Gamers\proj.win32\Debug.win32\WiseGamersProject.exe
-  0 File(s) copied
+﻿
