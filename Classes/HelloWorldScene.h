@@ -18,7 +18,6 @@ public:
 	void update(float)override;
 	cocos2d::Sprite* cog;
 
-	void ScrollingBackgroundSinglePlayer();
 
 	float r;
 

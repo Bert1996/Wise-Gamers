@@ -3,6 +3,7 @@
 #include "ui/CocosGUI.h"
 #include "stdio.h"
 #include <math.h>
+
 Scene* SinglePlayerScene::createScene()
 {
 	// 'scene' is an autorelease object
@@ -70,13 +71,16 @@ void SinglePlayerScene::update(float)
 		cog1->setRotation(r);
 		cog2->setRotation(r);
 		CheckForClosest();
-		//cogCollide();
+		cogCollide();
 
 		if (!_touched)
 		{
-			//wallCollide();
+			wallCollide();
 			movePlayer();
 			ScrollingBackground();
+			//Display the score
+			GameManager::sharedGameManager()->AddToScore(1);
+			scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
 		}
 		else
 		{
@@ -91,17 +95,22 @@ void SinglePlayerScene::update(float)
 		{
 			resetCog(2);
 		}
-		//Display the score
-		GameManager::sharedGameManager()->AddToScore(1);
-		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+		
 	}
+	else
+	{
+		auto mainScene = GameOver::createScene();
+		CCDirector::getInstance()->replaceScene(mainScene);
+	}
+
+	
 }
 
 void SinglePlayerScene::resetCog(int cogNum)
 {
 	auto size = Director::getInstance()->getVisibleSize();
-	int leftWall = (size.width / 100, 30);
-	int rightWall = ((size.width / 100) );
+	int leftWall = ((size.width / 100)* 30);
+	int rightWall = ((size.width / 100)* 68);
 
 	RandomHelper rand = RandomHelper();
 	int randomX = rand.random_int(leftWall, rightWall);
@@ -147,22 +156,10 @@ bool SinglePlayerScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* even
 	if (player->getPosition().x > _closeCog.x)
 	{
 		_clockwise = false;
-		if (flipped == false)
-		{
-			float flip = player->getScaleY() - 1;
-			player->setScaleY(flip);
-			flipped = true;
-		}
 	}
 	else
 	{
 		_clockwise = true;
-		if (flipped == true)
-		{
-			float flip = player->getScaleY() - 1;
-			player->setScaleY(flip);
-			flipped = false;
-		}
 
 	}
 	if (!_clicked && CloseEnough())
@@ -181,12 +178,10 @@ void SinglePlayerScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* even
 
 void SinglePlayerScene::cogCollide()
 {
-	if (player->getBoundingBox().intersectsRect(cog1->getBoundingBox()))
-	{
-		_alive = false;
-		cocos2d::log("cog collide");
-	}
-	if (player->getBoundingBox().intersectsRect(cog2->getBoundingBox()))
+	CCRect pBox = player->getBoundingBox();
+	Vec2 c1Box = cog1->getPosition();
+	Vec2 c2Box = cog2->getPosition();
+	if (pBox.intersectsCircle(c1Box,31) || pBox.intersectsCircle(c2Box,31))
 	{
 		_alive = false;
 		cocos2d::log("cog collide");
@@ -196,8 +191,8 @@ void SinglePlayerScene::cogCollide()
 void SinglePlayerScene::wallCollide()
 {
 	auto size = Director::getInstance()->getVisibleSize(); //27 ! 72
-	float leftWall = (size.width / 100, 27);
-	float rightWall = (size.width / 100, 72);
+	float leftWall = ((size.width / 100)* 27);
+	float rightWall = ((size.width / 100)* 72);
 
 	Vec2 play = player->getPosition();
 
@@ -222,6 +217,8 @@ void SinglePlayerScene::playerSpin()
 
 	if (!_clockwise)
 	{
+		player->setFlipY(true);
+		flipped = true;
 		//AntiClockwise Spin
 		float x = playerpos.x * c - playerpos.y * s;
 		float y = playerpos.x * s + playerpos.y * c;
@@ -229,11 +226,11 @@ void SinglePlayerScene::playerSpin()
 		playerpos.x = x + point.x;
 		playerpos.y = y + point.y;
 
-
-		if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
+		//Moves player closer
+		/*if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
 		{
 			playerpos.x -= 20.0f;
-		}
+		}*/
 
 		player->setPosition(playerpos);
 		SetRobotRotation();
@@ -242,6 +239,8 @@ void SinglePlayerScene::playerSpin()
 	else
 	{
 		//Clockwise Spin
+		player->setFlipY(false);
+		flipped = false;
 
 		float x = playerpos.x * c + playerpos.y * s;
 		float y = -playerpos.x * s + playerpos.y * c;
@@ -249,10 +248,11 @@ void SinglePlayerScene::playerSpin()
 		playerpos.x = x + point.x;
 		playerpos.y = y + point.y;
 
-		if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
+		//Moves player closer
+		/*if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
 		{
 			playerpos.x -= 20.0f;
-		}
+		}*/
 
 		player->setPosition(playerpos);
 		SetRobotRotation();
@@ -273,27 +273,25 @@ void SinglePlayerScene::movePlayer()
 		dirVector.normalize();
 	}
 
+	if (flipped)
+		player->setPosition(player->getPosition().x + -(rot * 4), player->getPosition().y);
+
 	if (!flipped)
 		player->setPosition(player->getPosition().x + (rot * 4), player->getPosition().y);
-
-	if (flipped)
-	{
-		player->setPosition(player->getPosition().x + -(rot * 4), player->getPosition().y);
-	}
 
 	//y
 	if (player->getPosition().y != moveY && player->getPosition().y > moveY) //19% of size.y
 	{
-		player->setPosition(player->getPosition().x, player->getPosition().y - 1.0f);
+		player->setPosition(player->getPosition().x, player->getPosition().y - 2.0f);
 	}
 	if (player->getPosition().y != moveY && player->getPosition().y < moveY)
 	{
-		player->setPosition(player->getPosition().x, player->getPosition().y + 1.0f);
+		player->setPosition(player->getPosition().x, player->getPosition().y + 2.0f);
 	}
 
 	//Cog Movement
-	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 4.0f);
-	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 4.0f);
+	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - _scrollSpeed);
+	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - _scrollSpeed);
 }
 
 bool SinglePlayerScene::CloseEnough()
@@ -302,7 +300,7 @@ bool SinglePlayerScene::CloseEnough()
 	Vec2 cog = _closeCog;
 	play -= cog;
 
-	if (play.length() > 400.0f)
+	if (play.length() > 300.0f)
 	{
 		return false;
 	}
@@ -314,6 +312,8 @@ void SinglePlayerScene::ScrollingBackground()
 {
 	auto size = Director::getInstance()->getVisibleSize();
 
+	float cloudPoint = ((size.height / 100) * 60);
+	float cloudPoint2 = ((size.height / 100) * 138.39);
 	//scrolling background
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();

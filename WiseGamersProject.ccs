@@ -24,9 +24,17 @@
         <Image Name="Bullet.png" />
         <Image Name="Background2.png" />
         <Image Name="secret_key.png" />
-        <Project Name="Level 2.csd" Type="Scene" />
-        <Project Name="Level 3.csd" Type="Scene" />
         <Image Name="Background3.png" />
+        <Project Name="GameOverScreen.csd" Type="Scene" />
+        <Image Name="GameOver.png" />
+        <Image Name="gameOver1.png" />
+        <Image Name="Line.png" />
+        <Image Name="VersusBackground.png" />
+        <Image Name="cloud-spotting.jpg" />
+        <Image Name="cloud.jpg" />
+        <Image Name="summer_clouds__psd__by_macsix-d6trrl1.png" />
+        <Image Name="backScroll.png" />
+        <Image Name="Panel.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

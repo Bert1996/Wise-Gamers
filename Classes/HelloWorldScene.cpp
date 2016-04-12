@@ -69,7 +69,7 @@ bool HelloWorld::init()
 
 	CoopPlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
 	{
-		auto mainScene = CoopScene::createScene();
+		auto mainScene = GameOver::createScene();
 
 		switch (type)
 		{
@@ -79,7 +79,7 @@ bool HelloWorld::init()
 			break;
 		case ui::Widget::TouchEventType::ENDED:
 			
-			CCDirector::getInstance()->replaceScene(mainScene);
+			//CCDirector::getInstance()->replaceScene(mainScene);
 
 			break;
 		default:

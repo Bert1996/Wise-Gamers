@@ -6,16 +6,15 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="1334.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="Background" ActionTag="1479444418" Tag="24" IconVisible="False" LeftMargin="-0.0001" RightMargin="854.0001" TopMargin="430.0000" ctype="SpriteObjectData">
-            <Size X="480.0000" Y="320.0000" />
-            <AnchorPoint />
-            <Position X="-0.0001" />
-            <Scale ScaleX="2.1348" ScaleY="2.3927" />
+          <AbstractNodeData Name="Image_3" ActionTag="1861135356" Tag="41" IconVisible="False" Scale9Width="3840" Scale9Height="2560" ctype="ImageViewObjectData">
+            <Size X="1334.0000" Y="750.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position Y="750.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" />
-            <PreSize X="0.3598" Y="0.4267" />
-            <FileData Type="Normal" Path="Resources/Background.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
+            <PrePosition Y="1.0000" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="summer_clouds__psd__by_macsix-d6trrl1.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Robot1" ActionTag="-1323363850" Tag="25" IconVisible="False" LeftMargin="180.0477" RightMargin="1108.9523" TopMargin="612.9586" BottomMargin="52.0414" ctype="SpriteObjectData">
             <Size X="45.0000" Y="85.0000" />
@@ -60,6 +59,16 @@
             <PreSize X="0.0345" Y="0.0613" />
             <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_9" ActionTag="-449898496" Tag="42" IconVisible="False" TopMargin="0.0028" BottomMargin="-0.0028" Scale9Width="480" Scale9Height="320" ctype="ImageViewObjectData">
+            <Size X="1334.0000" Y="750.0000" />
+            <AnchorPoint />
+            <Position Y="-0.0028" />
+            <Scale ScaleX="1.0232" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition Y="0.0000" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="Background3.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

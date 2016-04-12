@@ -14,10 +14,10 @@
         <LuaEncryptSign Value="" />
         <Android_PackageName Value="org.cocos.WiseGamersProject" />
         <AndroidkeyStore Value="" />
-        <AndroidVersion Value="android-20" />
+        <AndroidVersion Value="android-22" />
         <iOS_Target Value="WiseGamersProject-mobile" />
         <iOS_BundleID Value="" />
-        <Platform Value="None" />
+        <Platform Value="Android" />
         <RunPlatform Value="Windows" />
         <FrameworkVersion Value="cocos2d-x-3.9" />
         <IsDebugKeystore Value="True" />
@@ -31,14 +31,12 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
+          <FilePathData Path="Versus.csd" />
+          <FilePathData Path="SinglePlayer.csd" />
           <FilePathData Path="Coop.csd" />
           <FilePathData Path="Menu.csd" />
-          <FilePathData Path="Level 3.csd" />
-          <FilePathData Path="Level 2.csd" />
-          <FilePathData Path="SinglePlayer.csd" />
-          <FilePathData Path="Versus.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Versus.csd" />
+        <ActiveDocument Path="SinglePlayer.csd" />
       </Value>
     </Item>
   </Properties>

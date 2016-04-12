@@ -1,31 +1,54 @@
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\singleplayerscene.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\helloworldscene.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\soundmanager.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\main.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\versusscene.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\coopscene.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\gamemanager.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\cogs.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\appdelegate.obj
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\vc120.pdb
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\vc120.idb
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\game.res
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegamersproject.lib
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegamersproject.exp
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\vc140.idb
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\vc140.pdb
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegamersproject.pdb
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.command.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.read.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.write.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link-cvtres.read.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link-cvtres.write.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link-rc.read.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link-rc.write.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.command.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.read.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.write.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.command.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.read.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.write.1.tlog
-c:\student temporary folder\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\wisegamersproject.write.1u.tlog
+c:\documents\wise-gamers\proj.win32\debug.win32\vc140.pdb
+e:\wise-gamers\proj.win32\debug.win32\gamemanager.obj
+e:\wise-gamers\proj.win32\debug.win32\singleplayerscene.obj
+e:\wise-gamers\proj.win32\debug.win32\coopscene.obj
+e:\wise-gamers\proj.win32\debug.win32\cogs.obj
+e:\wise-gamers\proj.win32\debug.win32\soundmanager.obj
+e:\wise-gamers\proj.win32\debug.win32\versusscene.obj
+e:\wise-gamers\proj.win32\debug.win32\helloworldscene.obj
+e:\wise-gamers\proj.win32\debug.win32\appdelegate.obj
+e:\wise-gamers\proj.win32\debug.win32\gameover.obj
+e:\wise-gamers\proj.win32\debug.win32\main.obj
+e:\wise-gamers\proj.win32\debug.win32\vc120.pdb
+c:\documents\wise-gamers\proj.win32\debug.win32\wisegamersproject.ilk
+c:\documents\wise-gamers\proj.win32\debug.win32\wisegamersproject.exe
+c:\documents\wise-gamers\proj.win32\debug.win32\wisegamersproject.pdb
+e:\wise-gamers\proj.win32\debug.win32\wisegamersproject.ilk
+e:\wise-gamers\proj.win32\debug.win32\wisegamersproject.exe
+e:\wise-gamers\proj.win32\debug.win32\wisegamersproject.pdb
+e:\wise-gamers\proj.win32\debug.win32\game.res
+c:\documents\wise-gamers\proj.win32\debug.win32\wisegamersproject.lib
+c:\documents\wise-gamers\proj.win32\debug.win32\wisegamersproject.exp
+c:\documents\wise-gamers\proj.win32\wisegamersproject.cab
+e:\wise-gamers\proj.win32\debug.win32\wisegamersproject.lib
+e:\wise-gamers\proj.win32\debug.win32\wisegamersproject.exp
+e:\wise-gamers\proj.win32\wisegamersproject.cab
+c:\documents\git\wise-gamers\proj.win32\debug.win32\appdelegate.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\cogs.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\coopscene.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\gamemanager.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\gameover.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\helloworldscene.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\main.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\singleplayerscene.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\soundmanager.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\versusscene.obj
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegamersproject.ilk
+c:\documents\git\wise-gamers\proj.win32\debug.win32\game.res
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegamersproject.exp
+c:\documents\git\wise-gamers\proj.win32\debug.win32\vc120.idb
+c:\documents\git\wise-gamers\proj.win32\debug.win32\vc140.idb
+c:\documents\git\wise-gamers\proj.win32\debug.win32\vc120.pdb
+c:\documents\git\wise-gamers\proj.win32\debug.win32\vc140.pdb
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegamersproject.pdb
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegamersproject.exe
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.command.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.read.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\cl.write.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.command.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.read.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\link.write.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.command.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.read.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\rc.write.1.tlog
+c:\documents\git\wise-gamers\proj.win32\debug.win32\wisegame.76a39bb2.tlog\wisegamersproject.write.1u.tlog

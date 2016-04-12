@@ -6,6 +6,16 @@
       <ObjectData Name="Scene" Tag="17" ctype="GameNodeObjectData">
         <Size X="1334.0000" Y="750.0000" />
         <Children>
+          <AbstractNodeData Name="Image_3" ActionTag="-2147146454" Tag="39" IconVisible="False" Scale9Width="3840" Scale9Height="2560" ctype="ImageViewObjectData">
+            <Size X="1334.0000" Y="750.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position Y="750.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition Y="1.0000" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="summer_clouds__psd__by_macsix-d6trrl1.png" Plist="" />
+          </AbstractNodeData>
           <AbstractNodeData Name="labBackground2" ActionTag="-538967823" Tag="12" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="480" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="1334.0000" Y="750.0000" />
             <AnchorPoint ScaleY="1.0000" />
@@ -30,7 +40,7 @@
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="413.9016" Y="1650.4465" />
-            <Scale ScaleX="0.2984" ScaleY="0.2984" />
+            <Scale ScaleX="0.3000" ScaleY="0.3000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.3103" Y="2.2006" />
             <PreSize X="0.1529" Y="0.2720" />
@@ -41,7 +51,7 @@
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="618.3923" Y="1307.7024" />
-            <Scale ScaleX="0.2984" ScaleY="0.2984" />
+            <Scale ScaleX="0.3000" ScaleY="0.3000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4636" Y="1.7436" />
             <PreSize X="0.1529" Y="0.2720" />
@@ -69,17 +79,6 @@
             <PreSize X="0.0675" Y="0.0307" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="key" ActionTag="-1141440738" Tag="15" IconVisible="False" LeftMargin="445.5853" RightMargin="488.4147" TopMargin="300.1543" BottomMargin="149.8457" ctype="SpriteObjectData">
-            <Size X="400.0000" Y="300.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="645.5853" Y="299.8457" />
-            <Scale ScaleX="0.2253" ScaleY="0.2127" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4839" Y="0.3998" />
-            <PreSize X="0.2999" Y="0.4000" />
-            <FileData Type="Normal" Path="secret_key.png" Plist="" />
-            <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

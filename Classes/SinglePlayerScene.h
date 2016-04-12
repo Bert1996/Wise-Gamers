@@ -1,3 +1,4 @@
+#pragma once
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
@@ -5,6 +6,7 @@
 #include "Cogs.h"
 #include "GameManager.h"
 #include "stdio.h"
+#include "GameOver.h"
 
 USING_NS_CC;
 class SinglePlayerScene : public cocos2d::Layer
@@ -20,6 +22,7 @@ private:
 	virtual bool init();
 	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
+
 	void resetCog(int cogNum);
 	void CheckForClosest();
 	void ScrollingBackground();
@@ -44,6 +47,7 @@ private:
 	bool flipped;
 	bool _alive;
 	int _cogNumber;
-	float r = 0;
 	float _scrollSpeed;
+	float r = 0;
+
 };
