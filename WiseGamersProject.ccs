@@ -39,6 +39,7 @@
         <TTF Name="Roboto-Black.ttf" />
         <Image Name="CoopBackground.png" />
         <Image Name="SingleBackground.png" />
+        <Image Name="help.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

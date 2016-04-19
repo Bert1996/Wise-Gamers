@@ -81,6 +81,16 @@
             <OutlineColor A="255" R="0" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
+          <AbstractNodeData Name="Image_1" ActionTag="513978566" Tag="22" IconVisible="False" LeftMargin="307.7153" RightMargin="226.2847" TopMargin="185.3383" BottomMargin="-35.3383" Scale9Width="800" Scale9Height="600" ctype="ImageViewObjectData">
+            <Size X="800.0000" Y="600.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="707.7153" Y="264.6617" />
+            <Scale ScaleX="1.3939" ScaleY="1.4433" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5305" Y="0.3529" />
+            <PreSize X="0.5997" Y="0.8000" />
+            <FileData Type="Normal" Path="help.png" Plist="" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

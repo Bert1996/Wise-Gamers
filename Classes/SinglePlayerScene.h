@@ -1,4 +1,5 @@
 #pragma once
+
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
@@ -33,12 +34,15 @@ private:
 	void movePlayer();
 	bool CloseEnough();
 	void SetRobotRotation();
-
+	void InRange();
+	void RangeIndicator();
+	void Speed();
 	cocos2d::Sprite* cog1;
 	cocos2d::Sprite* cog2;
 	cocos2d::Sprite* player;
 	cocos2d::Sprite* background;
 	cocos2d::Sprite* background2;
+	cocos2d::Sprite* help;
 
 	Vec2 dirVector;
 	Vec2 _closeCog;
@@ -50,6 +54,7 @@ private:
 	bool _clicked;
 	bool flipped;
 	bool _alive;
+	bool _tutorial;
 	int _cogNumber;
 	float cogWdith;
 	float _scrollSpeed;

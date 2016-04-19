@@ -34,6 +34,7 @@ bool SinglePlayerScene::init()
 	player = (Sprite*)rootNode->getChildByName("player");
 	background = (Sprite*)rootNode->getChildByName("labBackground1");
 	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
+	help = (Sprite*)rootNode->getChildByName("Image_1");
 
 	//score label
 	int score = 0;
@@ -62,50 +63,65 @@ bool SinglePlayerScene::init()
 	addChild(rootNode);
 	this->scheduleUpdate();
 
+	
+	if (!cocos2d::UserDefault::getInstance()->getBoolForKey("tut"))
+	{
+		cocos2d::UserDefault::getInstance()->setBoolForKey("tut", true);
+		_tutorial = false;
+	}
+	else
+	{
+		_tutorial = true;
+		help->setOpacity(0);
+	}
+	
 	return true;
 }
 
 void SinglePlayerScene::update(float)
 {
-	if (_alive)
+	if (_tutorial)
 	{
-		r++;
-		cog1->setRotation(r);
-		cog2->setRotation(r);
-		CheckForClosest();
-		cogCollide();
-
-
-		if (!_touched)
+		if (_alive)
 		{
-			wallCollide();
-			movePlayer();
-			ScrollingBackground();
-			//Display the score
-			GameManager::sharedGameManager()->AddToScore(1);
-			scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+			r++;
+			cog1->setRotation(r);
+			cog2->setRotation(r);
+			CheckForClosest();
+			cogCollide();
+			RangeIndicator();
+			Speed();
+
+			if (!_touched)
+			{
+				wallCollide();
+				movePlayer();
+				ScrollingBackground();
+				//Display the score
+				GameManager::sharedGameManager()->AddToScore(1);
+				scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+			}
+			else
+			{
+				playerSpin();
+			}
+
+			if (cog1->getPosition().y < 0.0f)
+			{
+				resetCog(1);
+			}
+			if (cog2->getPosition().y < 0.0f)
+			{
+				resetCog(2);
+			}
+
 		}
 		else
 		{
-			playerSpin();
+			auto mainScene = GameOver::createScene();
+			CCDirector::getInstance()->replaceScene(mainScene);
 		}
-
-		if (cog1->getPosition().y < 0.0f)
-		{
-			resetCog(1);
-		}
-		if (cog2->getPosition().y < 0.0f)
-		{
-			resetCog(2);
-		}
-
 	}
-	else
-	{
-		auto mainScene = GameOver::createScene();
-		CCDirector::getInstance()->replaceScene(mainScene);
-	}
-
 
 }
 
@@ -169,20 +185,27 @@ void SinglePlayerScene::CheckForClosest()
 
 bool SinglePlayerScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 	cocos2d::log("touch began");
-	if (player->getPosition().x > _closeCog.x)
+	if (_tutorial)
 	{
-		_clockwise = false;
+		if (player->getPosition().x > _closeCog.x)
+		{
+			_clockwise = false;
+		}
+		else
+		{
+			_clockwise = true;
+
+		}
+		if (!_clicked && CloseEnough())
+			_touched = true;
+
+		_clicked = true;
 	}
 	else
 	{
-		_clockwise = true;
-
+		_tutorial = cocos2d::UserDefault::getInstance()->getBoolForKey("tut");
+		help->setOpacity(0);
 	}
-	if (!_clicked && CloseEnough())
-		_touched = true;
-
-	_clicked = true;
-
 	return true;
 }
 
@@ -320,7 +343,6 @@ bool SinglePlayerScene::CloseEnough()
 	{
 		return false;
 	}
-
 	return true;
 }
 
@@ -332,8 +354,8 @@ void SinglePlayerScene::ScrollingBackground()
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();
 
-	background->setPosition(Bg1Pos.x, Bg1Pos.y - _scrollSpeed);
-	background2->setPosition(Bg2Pos.x, Bg2Pos.y - _scrollSpeed);
+	background->setPosition(Bg1Pos.x, Bg1Pos.y - 5.0f);
+	background2->setPosition(Bg2Pos.x, Bg2Pos.y - 5.0f);
 
 	if (background2->getPosition().y == size.height)
 	{
@@ -356,3 +378,43 @@ void SinglePlayerScene::SetRobotRotation()
 	player->setRotation(-angle);
 }
 
+void SinglePlayerScene::InRange()
+{
+	//decides cog colour
+	if (_cogNumber == 1)
+	{
+		cog1->setColor(cocos2d::Color3B::GREEN);
+	}
+	else
+	{
+		cog1->setColor(cocos2d::Color3B::GRAY);
+	}
+	if (_cogNumber == 2)
+	{
+		cog2->setColor(cocos2d::Color3B::GREEN);
+	}
+	else
+	{
+		cog2->setColor(cocos2d::Color3B::GRAY);
+	}
+}
+
+
+void SinglePlayerScene::RangeIndicator()
+{
+	Vec2 play = player->getPosition();
+	Vec2 cog = _closeCog;
+	play -= cog;
+
+	InRange();
+}
+
+void SinglePlayerScene::Speed()
+{
+	float score = GameManager::sharedGameManager()->GetScore();
+
+	if ((int)score % 500 == 0)
+	{
+		_scrollSpeed += 2.5f;
+	}
+}

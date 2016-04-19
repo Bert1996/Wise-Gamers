@@ -19,8 +19,12 @@ public:
 	static cocos2d::Scene* createScene();
 	CREATE_FUNC(GameOver);
 	virtual bool init();
-
+	bool UpdateHighScores();
 	cocos2d::ui::Text* scoreLabel;
-	
+	cocos2d::ui::Text* first;
+	cocos2d::ui::Text* sec;
+	cocos2d::ui::Text* third;
+	cocos2d::ui::Text* fourth;
+	cocos2d::ui::Text* fifth;
 };
 

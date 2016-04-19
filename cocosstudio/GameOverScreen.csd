@@ -61,14 +61,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="scoreLabel" ActionTag="1207835130" Tag="21" IconVisible="False" LeftMargin="281.5538" RightMargin="956.4462" TopMargin="197.9261" BottomMargin="526.0739" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="scoreLabel" ActionTag="1207835130" Tag="21" IconVisible="False" LeftMargin="280.5538" RightMargin="955.4462" TopMargin="195.9261" BottomMargin="524.0739" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="98.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="329.5538" Y="539.0739" />
             <Scale ScaleX="1.9556" ScaleY="3.6957" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.2470" Y="0.7188" />
-            <PreSize X="0.0720" Y="0.0347" />
+            <PreSize X="0.0735" Y="0.0400" />
             <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
             <OutlineColor A="255" R="0" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
@@ -104,6 +104,66 @@
             <PrePosition X="0.2506" Y="0.6357" />
             <PreSize X="0.0750" Y="0.4000" />
             <FileData Type="Normal" Path="Line.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="first" ActionTag="-1139208580" Tag="33" IconVisible="False" LeftMargin="276.0000" RightMargin="960.0000" TopMargin="355.0000" BottomMargin="365.0000" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="325.0000" Y="380.0000" />
+            <Scale ScaleX="2.0146" ScaleY="2.0576" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2436" Y="0.5067" />
+            <PreSize X="0.0735" Y="0.0400" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="sec" ActionTag="853005121" Tag="34" IconVisible="False" LeftMargin="276.0000" RightMargin="960.0000" TopMargin="420.0000" BottomMargin="300.0000" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="325.0000" Y="315.0000" />
+            <Scale ScaleX="2.0146" ScaleY="2.0576" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2436" Y="0.4200" />
+            <PreSize X="0.0735" Y="0.0400" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="third" ActionTag="1359173510" Tag="35" IconVisible="False" LeftMargin="276.0000" RightMargin="960.0000" TopMargin="485.0000" BottomMargin="235.0000" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="325.0000" Y="250.0000" />
+            <Scale ScaleX="2.0146" ScaleY="2.0576" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2436" Y="0.3333" />
+            <PreSize X="0.0735" Y="0.0400" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="fourth" ActionTag="-1856058572" Tag="36" IconVisible="False" LeftMargin="276.0000" RightMargin="960.0000" TopMargin="550.0000" BottomMargin="170.0000" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="325.0000" Y="185.0000" />
+            <Scale ScaleX="2.0146" ScaleY="2.0576" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2436" Y="0.2467" />
+            <PreSize X="0.0735" Y="0.0400" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="fifth" ActionTag="-1868086994" Tag="37" IconVisible="False" LeftMargin="276.0000" RightMargin="960.0000" TopMargin="615.0000" BottomMargin="105.0000" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="325.0000" Y="120.0000" />
+            <Scale ScaleX="2.0146" ScaleY="2.0576" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2436" Y="0.1600" />
+            <PreSize X="0.0735" Y="0.0400" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

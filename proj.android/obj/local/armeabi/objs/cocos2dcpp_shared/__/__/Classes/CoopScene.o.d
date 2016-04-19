@@ -1,28 +1,60 @@
 obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  jni/../../Classes/CoopScene.cpp jni/../../Classes/CoopScene.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../cocos2d.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformConfig.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAsyncTaskPool.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoStudio.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrame.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCGeometry.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformMacros.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformConfig.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformDefine.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCPlatformDefine-android.h \
  C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCDirector.h \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCRef.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCVector.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccMacros.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConsole.h \
  C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/time.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/time.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/signal.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/signal.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/signal.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/sigcontext.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/siginfo.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/ucontext.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/user.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCRef.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCStdC.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCStdC-android.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h \
  C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h \
  C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/alloca.h \
  C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/strings.h \
@@ -30,14 +62,9 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccRandom.h \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCProtocols.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccTypes.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCGeometry.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCMath.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Vec2.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCMathBase.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Vec2.inl \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Vec2.h \
@@ -52,14 +79,8 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Mat4.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Quaternion.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Quaternion.inl \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGL.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCGL-android.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTexture2D.h \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInterval.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAction.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCScriptSupport.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCCommon.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCTouch.h \
@@ -67,36 +88,122 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEvent.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventKeyboard.h \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAnimation.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCValue.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCVector.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSpriteFrame.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCNode.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCProtocols.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccTypes.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGL.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCGL-android.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTexture2D.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCAffineTransform.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCComponentContainer.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCMap.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCComponent.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAutoPolygon.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCImage.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTrianglesCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGLProgramState.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocosStudioExport.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrameEasing.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionManagerEx.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionObject.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionNode.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/document.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/reader.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/allocators.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/encodings.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/meta.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/../rapidjson.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/stack.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strtod.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/ieee754.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/biginteger.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/diyfp.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/pow10.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/error.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/../rapidjson.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInstant.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmature.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDefine.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBone.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDatas.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTween.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCProcessBase.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDecorativeDisplay.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayFactory.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCColliderDetector.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayManager.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBatchNode.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureAnimation.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSpriteFrameCacheHelper.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDataManager.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSkin.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSprite.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawNode.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCCustomCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTextureAtlas.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCQuadCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDataReaderHelper.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTransformHelp.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCUtilMath.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ObjectFactory.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoLoader.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAttribute.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAudio.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComController.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCInputDelegate.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventListener.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComRender.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSGUIReader.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayout.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIWidget.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutParameter.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIExport.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIDefine.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGroupCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/WidgetReader/WidgetReaderProtocol.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../cocos2d.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAsyncTaskPool.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCDirector.h \
+ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGLView.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCScheduler.h \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/set \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/uthash.h \
- C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
  C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/future \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAutoreleasePool.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConfiguration.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCValue.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimate3D.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimation3D.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimationCurve.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimationCurve.inl \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCBundle3DData.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAABB.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInterval.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAction.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAnimation.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSpriteFrame.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAutoPolygon.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCImage.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTrianglesCommand.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGLProgramState.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConsole.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCData.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCDirector.h \
@@ -128,7 +235,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventAcceleration.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventCustom.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventDispatcher.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventListener.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventFocus.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventKeyboard.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventListenerAcceleration.h \
@@ -156,7 +262,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionCatmullRom.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionEase.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInstant.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid3D.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInstant.h \
@@ -169,11 +274,7 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionTween.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAtlasNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCQuadCommand.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCClippingNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGroupCommand.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCCustomCommand.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCClippingRectangleNode.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawNode.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawingPrimitives.h \
@@ -204,9 +305,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProgressTimer.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCRenderTexture.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSprite.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTextureAtlas.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTransition.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTransitionPageTurn.h \
@@ -347,72 +445,6 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../deprecated/CCSet.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../deprecated/CCString.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../deprecated/CCDeprecated.h \
- jni/../../Classes/SoundManager.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/Export.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoStudio.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrame.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocosStudioExport.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrameEasing.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionManagerEx.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionObject.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/document.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/reader.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/allocators.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/encodings.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/meta.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/../rapidjson.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/stack.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strtod.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/ieee754.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/biginteger.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/diyfp.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/pow10.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/error.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/../rapidjson.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h \
- C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmature.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDefine.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBone.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDatas.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTween.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCProcessBase.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDecorativeDisplay.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayFactory.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCColliderDetector.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayManager.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBatchNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureAnimation.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSpriteFrameCacheHelper.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDataManager.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSkin.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDataReaderHelper.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTransformHelp.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCUtilMath.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ObjectFactory.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoLoader.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAttribute.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAudio.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComController.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCInputDelegate.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComRender.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSGUIReader.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayout.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIWidget.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutParameter.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIExport.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIDefine.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/WidgetReader/WidgetReaderProtocol.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSSceneReader.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/TriggerBase.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/TriggerObj.h \
@@ -459,21 +491,75 @@ obj/local/armeabi/objs/cocos2dcpp_shared/__/__/Classes/CoopScene.o: \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIDeprecated.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIScale9Sprite.h \
  C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIEditBox/UIEditBox.h \
- C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutComponent.h
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutComponent.h \
+ jni/../../Classes/SoundManager.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h \
+ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/Export.h \
+ jni/../../Classes/Cogs.h jni/../../Classes/GameManager.h \
+ jni/../../Classes/GameOver.h jni/../../Classes/HelloWorldScene.h \
+ jni/../../Classes/SinglePlayerScene.h jni/../../Classes/VersusScene.h
 
 jni/../../Classes/CoopScene.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../cocos2d.h:
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoStudio.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h:
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrame.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformConfig.h:
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCGeometry.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAsyncTaskPool.h:
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdint.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/limits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/limits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/limits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/machine/limits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/page.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformMacros.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformConfig.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCPlatformDefine.h:
 
@@ -481,21 +567,37 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CC
 
 C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/android/log.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCDirector.h:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCRef.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCVector.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccMacros.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConsole.h:
 
 C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/select.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/time.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/linux/time.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/signal.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/string.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/malloc.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/signal.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/signal.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/sigcontext.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm/siginfo.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/ucontext.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/sys/user.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
 C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
@@ -503,11 +605,11 @@ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
 C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCRef.h:
+
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCStdC.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCStdC-android.h:
-
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/math.h:
 
 C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/stdlib.h:
 
@@ -523,21 +625,11 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccRandom.h:
 
 C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCProtocols.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccTypes.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCGeometry.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCMath.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Vec2.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCMathBase.h:
 
@@ -567,21 +659,9 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Quaternion.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/Quaternion.inl:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGL.h:
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInterval.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCGL-android.h:
-
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
-
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h:
-
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h:
-
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTexture2D.h:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAction.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCScriptSupport.h:
 
@@ -597,6 +677,36 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventKeyboar
 
 C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAnimation.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCValue.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCVector.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSpriteFrame.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCNode.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCProtocols.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccTypes.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGL.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/android/CCGL-android.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTexture2D.h:
+
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../math/CCAffineTransform.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCComponentContainer.h:
@@ -604,6 +714,174 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCComponentConta
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCMap.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCComponent.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAutoPolygon.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCImage.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTrianglesCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGLProgramState.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocosStudioExport.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrameEasing.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionManagerEx.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionObject.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionNode.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/document.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/reader.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+
+C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/allocators.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/encodings.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/meta.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/../rapidjson.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/stack.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strtod.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/ieee754.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/biginteger.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/diyfp.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/pow10.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/error.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/../rapidjson.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInstant.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmature.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDefine.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBone.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDatas.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTween.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCProcessBase.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDecorativeDisplay.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayFactory.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCColliderDetector.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayManager.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBatchNode.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureAnimation.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSpriteFrameCacheHelper.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDataManager.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSkin.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSprite.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawNode.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCCustomCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTextureAtlas.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCQuadCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDataReaderHelper.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTransformHelp.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCUtilMath.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ObjectFactory.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoLoader.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAttribute.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAudio.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComController.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCInputDelegate.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventListener.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComRender.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSGUIReader.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayout.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIWidget.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutParameter.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIExport.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIDefine.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGroupCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/WidgetReader/WidgetReaderProtocol.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../cocos2d.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ccConfig.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAsyncTaskPool.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCDirector.h:
+
+C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCGLView.h:
 
@@ -613,19 +891,11 @@ C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/set:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/uthash.h:
 
-C:/Cocos/tools/android-ndk-r10e/platforms/android-19/arch-arm/usr/include/inttypes.h:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
-
 C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/future:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCAutoreleasePool.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConfiguration.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCValue.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimate3D.h:
 
@@ -638,24 +908,6 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAnimationCurve
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCBundle3DData.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../3d/CCAABB.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInterval.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAction.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAnimation.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSpriteFrame.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAutoPolygon.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../platform/CCImage.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTrianglesCommand.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGLProgramState.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCConsole.h:
 
@@ -719,8 +971,6 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventCustom.
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventDispatcher.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventListener.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventFocus.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/CCEventKeyboard.h:
@@ -775,8 +1025,6 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionEase.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionInstant.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid3D.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCActionGrid.h:
@@ -801,15 +1049,7 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCAtlasNode.h:
 
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCQuadCommand.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCClippingNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCGroupCommand.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCRenderCommand.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCCustomCommand.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCClippingRectangleNode.h:
 
@@ -870,12 +1110,6 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProgressTimer.
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCRenderTexture.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCSprite.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCDrawNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../renderer/CCTextureAtlas.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCScene.h:
 
@@ -1157,138 +1391,6 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../deprecated/CCString
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../deprecated/CCDeprecated.h:
 
-jni/../../Classes/SoundManager.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/Export.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoStudio.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrame.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocosStudioExport.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionFrameEasing.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionManagerEx.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionObject.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCActionNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/document.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/reader.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/allocators.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/encodings.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/meta.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/../rapidjson.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/stack.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strtod.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/ieee754.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/biginteger.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/diyfp.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/pow10.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/error.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/error/../rapidjson.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h:
-
-C:/Cocos/tools/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmature.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDefine.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBone.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDatas.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCTweenFunction.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTween.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCProcessBase.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDecorativeDisplay.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayFactory.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCColliderDetector.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDisplayManager.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCBatchNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureAnimation.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSpriteFrameCacheHelper.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCArmatureDataManager.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSkin.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCDataReaderHelper.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/DictionaryHelper.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCTransformHelp.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCUtilMath.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../base/ObjectFactory.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CocoLoader.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAttribute.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComBase.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComAudio.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComController.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCInputDelegate.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCComRender.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSGUIReader.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayout.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIWidget.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../2d/CCProtectedNode.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutParameter.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIExport.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/GUIDefine.h:
-
-C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/WidgetReader/WidgetReaderProtocol.h:
-
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/CCSSceneReader.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/editor-support/cocostudio/prebuilt-mk/../../cocostudio/TriggerBase.h:
@@ -1382,3 +1484,21 @@ C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIScale9Sprite.h
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UIEditBox/UIEditBox.h:
 
 C:/Cocos/frameworks/cocos2d-x-3.9/cocos/3d/prebuilt-mk/../../ui/UILayoutComponent.h:
+
+jni/../../Classes/SoundManager.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h:
+
+C:/Cocos/frameworks/cocos2d-x-3.9/cocos/audio/android/prebuilt-mk/../../include/Export.h:
+
+jni/../../Classes/Cogs.h:
+
+jni/../../Classes/GameManager.h:
+
+jni/../../Classes/GameOver.h:
+
+jni/../../Classes/HelloWorldScene.h:
+
+jni/../../Classes/SinglePlayerScene.h:
+
+jni/../../Classes/VersusScene.h:
