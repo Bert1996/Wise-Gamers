@@ -44,13 +44,13 @@ bool VersusScene::init()
 	_player1cogNumber = 0;
 	player1dirVector = Vec2(0.0f, 0.0f);
 	_player1closeCog = cog1->getPosition();
-
+	_player1scrollSpeed = 5.0f;
 	//Sprite Inits for Player1
 	cog3 = (Sprite*)rootNode->getChildByName("cog3");
 	cog4 = (Sprite*)rootNode->getChildByName("cog4");
 	player2 = (Sprite*)rootNode->getChildByName("player2");
-	background3 = (Sprite*)rootNode->getChildByName("leftBack3");
-	background4 = (Sprite*)rootNode->getChildByName("leftBack4");
+	background3 = (Sprite*)rootNode->getChildByName("rightBack1");
+	background4 = (Sprite*)rootNode->getChildByName("rightBack2");
 
 	//Varable Inits
 	_player2touched = false;
@@ -60,12 +60,15 @@ bool VersusScene::init()
 	_player2cogNumber = 0;
 	player2dirVector = Vec2(0.0f, 0.0f);
 	_player2closeCog = cog1->getPosition();
-
+	_player2scrollSpeed = 5.0f;
 	// Touch Listener
 	auto touchListener = EventListenerTouchOneByOne::create();
 	touchListener->onTouchBegan = CC_CALLBACK_2(VersusScene::onTouchBegan, this);
 	touchListener->onTouchEnded = CC_CALLBACK_2(VersusScene::onTouchEnded, this);
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+
+	player1ResetCogX();
+	player2ResetCogX();
 
 	addChild(rootNode);
 	this->scheduleUpdate();
@@ -81,7 +84,7 @@ void VersusScene::update(float)
 	cog4->setRotation(r);
 
 	player1CheckForClosest();
-	//player1CogCollide();
+	player1CogCollide();
 	player2CheckForClosest();
 	player2CogCollide();
 
@@ -98,11 +101,11 @@ void VersusScene::update(float)
 
 	if (cog1->getPosition().y < 0.0f)
 	{
-		player1ResetCog(1);
+		player1ResetCogY(1);
 	}
 	if (cog2->getPosition().y < 0.0f)
 	{
-		player1ResetCog(2);
+		player1ResetCogY(2);
 	}
 	/////////////////////////////////////////
 	if (!_player2touched)
@@ -126,8 +129,15 @@ void VersusScene::update(float)
 	}
 	///////////////////////////////////
 
-	if (!_player1alive || !_player2alive)
+	if (!_player1alive)
 	{
+		GameManager::sharedGameManager()->SetScore(-2);
+		auto mainScene = GameOver::createScene();
+		CCDirector::getInstance()->replaceScene(mainScene);
+	}
+	if (!_player2alive)
+	{
+		GameManager::sharedGameManager()->SetScore(-1);
 		auto mainScene = GameOver::createScene();
 		CCDirector::getInstance()->replaceScene(mainScene);
 	}
@@ -140,6 +150,7 @@ bool VersusScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 
 	if (touch->getLocation().x < (size.width / 2))
 	{
+		cocos2d::log("Player1 Touched");
 		if (player1->getPosition().x > _player1closeCog.x)
 		{
 			_player1clockwise = false;
@@ -154,8 +165,9 @@ bool VersusScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 
 		_player1clicked = true;
 	}
-	else
+	if (touch->getLocation().x > (size.width / 2))
 	{
+		cocos2d::log("Player2 Touched");
 		if (player2->getPosition().x > _player2closeCog.x)
 		{
 			_player2clockwise = false;
@@ -180,7 +192,7 @@ void VersusScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) {
 }
 
 //Player1Methods
-void VersusScene::player1ResetCog(int cogNum)
+void VersusScene::player1ResetCogY(int cogNum)
 {
 	auto size = Director::getInstance()->getVisibleSize();
 	int leftWall = ((size.width / 100) * 10);
@@ -200,6 +212,19 @@ void VersusScene::player1ResetCog(int cogNum)
 		cog2->setPosition(randomX, size.height);
 		_player1clicked = false;
 	}
+}
+void VersusScene::player1ResetCogX()
+{
+	auto size = Director::getInstance()->getVisibleSize();
+	int leftWall = ((size.width / 100) * 10);
+	int rightWall = ((size.width / 100) * 40);
+
+	RandomHelper rand = RandomHelper();
+	int randomX = rand.random_int(leftWall, rightWall);
+
+	cog1->setPosition(randomX, cog1->getPositionY());
+	randomX = rand.random_int(leftWall, rightWall);
+	cog2->setPosition(randomX, cog2->getPositionY());
 }
 
 void VersusScene::player1CheckForClosest()
@@ -339,8 +364,8 @@ void VersusScene::player1MovePlayer()
 	}
 
 	//Cog Movement
-	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 4.0f);
-	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 4.0f);
+	cog1->setPosition(cog1->getPosition().x, cog1->getPosition().y - 5.0f);
+	cog2->setPosition(cog2->getPosition().x, cog2->getPosition().y - 5.0f);
 }
 
 bool VersusScene::player1CloseEnough()
@@ -349,7 +374,7 @@ bool VersusScene::player1CloseEnough()
 	Vec2 cog = _player1closeCog;
 	play -= cog;
 
-	if (play.length() > 300.0f)
+	if (play.length() > 250.0f)
 	{
 		return false;
 	}
@@ -368,12 +393,11 @@ void VersusScene::player1ScrollingBackground()
 	background->setPosition(Bg1Pos.x, Bg1Pos.y - _player1scrollSpeed);
 	background2->setPosition(Bg2Pos.x, Bg2Pos.y - _player1scrollSpeed);
 
-	if (background->getPosition().y < 0)
+	if (background2->getPosition().y == size.height)
 	{
 		background->setPosition(Bg1Pos.x, size.height * 2);
 	}
-
-	if (background2->getPosition().y < 0)
+	if (background->getPosition().y == size.height)
 	{
 		background2->setPosition(Bg2Pos.x, size.height * 2);
 	}
@@ -412,7 +436,19 @@ void VersusScene::player2ResetCog(int cogNum)
 		_player2clicked = false;
 	}
 }
+void VersusScene::player2ResetCogX()
+{
+	auto size = Director::getInstance()->getVisibleSize();
+	int leftWall = ((size.width / 100) * 60);
+	int rightWall = ((size.width / 100) * 90);
 
+	RandomHelper rand = RandomHelper();
+	int randomX = rand.random_int(leftWall, rightWall);
+
+	cog3->setPosition(randomX, cog3->getPositionY());
+	randomX = rand.random_int(leftWall, rightWall);
+	cog4->setPosition(randomX, cog4->getPositionY());
+}
 void VersusScene::player2CheckForClosest()
 {
 	Vec2 play = player2->getPosition();
@@ -423,7 +459,7 @@ void VersusScene::player2CheckForClosest()
 	play1 -= cog_1;
 	if (!_player2touched)
 	{
-		if (play.length() > play1.length())
+		if (play.length() < play1.length())
 		{
 			_player2cogNumber = 2;
 			_player2closeCog = cog3->getPosition();
@@ -550,8 +586,8 @@ void VersusScene::player2MovePlayer()
 	}
 
 	//Cog Movement
-	cog3->setPosition(cog3->getPosition().x, cog3->getPosition().y - 4.0f);
-	cog4->setPosition(cog4->getPosition().x, cog4->getPosition().y - 4.0f);
+	cog3->setPosition(cog3->getPosition().x, cog3->getPosition().y - 5.0f);
+	cog4->setPosition(cog4->getPosition().x, cog4->getPosition().y - 5.0f);
 }
 
 bool VersusScene::player2CloseEnough()
@@ -560,11 +596,10 @@ bool VersusScene::player2CloseEnough()
 	Vec2 cog = _player2closeCog;
 	play -= cog;
 
-	if (play.length() > 300.0f)
+	if (play.length() > 250.0f)
 	{
 		return false;
 	}
-
 	return true;
 }
 
@@ -573,20 +608,19 @@ void VersusScene::player2ScrollingBackground()
 	auto size = Director::getInstance()->getVisibleSize();
 
 	//scrolling background
-	Vec2 Bg1Pos = background->getPosition();
-	Vec2 Bg2Pos = background2->getPosition();
+	Vec2 Bg1Pos = background3->getPosition();
+	Vec2 Bg2Pos = background4->getPosition();
 
-	background->setPosition(Bg1Pos.x, Bg1Pos.y - _player2scrollSpeed);
-	background2->setPosition(Bg2Pos.x, Bg2Pos.y - _player2scrollSpeed);
+	background3->setPosition(Bg1Pos.x, Bg1Pos.y - _player2scrollSpeed);
+	background4->setPosition(Bg2Pos.x, Bg2Pos.y - _player2scrollSpeed);
 
-	if (background->getPosition().y < 0)
+	if (background4->getPosition().y == size.height)
 	{
-		background->setPosition(Bg1Pos.x, size.height * 2);
+		background3->setPosition(Bg1Pos.x, size.height * 2);
 	}
-
-	if (background2->getPosition().y < 0)
+	if (background3->getPosition().y == size.height)
 	{
-		background2->setPosition(Bg2Pos.x, size.height * 2);
+		background4->setPosition(Bg2Pos.x, size.height * 2);
 	}
 }
 

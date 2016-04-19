@@ -16,7 +16,7 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="summer_clouds__psd__by_macsix-d6trrl1.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="labBackground2" ActionTag="-538967823" Tag="12" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="480" Scale9Height="320" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="labBackground2" ActionTag="-538967823" Tag="12" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="1334" Scale9Height="750" ctype="ImageViewObjectData">
             <Size X="1334.0000" Y="750.0000" />
             <AnchorPoint ScaleY="1.0000" />
             <Position Y="1500.0000" />
@@ -24,9 +24,9 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="2.0000" />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="Background2.png" Plist="" />
+            <FileData Type="Normal" Path="SingleBackground.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="labBackground1" ActionTag="27638158" Tag="20" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" Scale9Width="480" Scale9Height="320" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="labBackground1" ActionTag="27638158" Tag="20" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" Scale9Width="1334" Scale9Height="750" ctype="ImageViewObjectData">
             <Size X="1334.0000" Y="750.0000" />
             <AnchorPoint ScaleY="1.0000" />
             <Position Y="750.0000" />
@@ -34,7 +34,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="1.0000" />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="Background2.png" Plist="" />
+            <FileData Type="Normal" Path="SingleBackground.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="cog2" ActionTag="1768739629" Tag="11" IconVisible="False" LeftMargin="311.9016" RightMargin="818.0984" TopMargin="-1002.4465" BottomMargin="1548.4465" ctype="SpriteObjectData">
             <Size X="204.0000" Y="204.0000" />
@@ -69,15 +69,16 @@
             <FileData Type="Normal" Path="Robot1.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="scoreLabel" ActionTag="-501405700" Tag="13" IconVisible="False" LeftMargin="830.6539" RightMargin="413.3461" TopMargin="155.6326" BottomMargin="571.3674" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="90.0000" Y="23.0000" />
+          <AbstractNodeData Name="scoreLabel" ActionTag="-501405700" Tag="13" IconVisible="False" LeftMargin="584.4991" RightMargin="579.5009" TopMargin="41.3231" BottomMargin="657.6769" FontSize="36" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="170.0000" Y="51.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="875.6539" Y="582.8674" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.6564" Y="0.7772" />
-            <PreSize X="0.0675" Y="0.0307" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
+            <Position X="669.4991" Y="683.1769" />
+            <Scale ScaleX="1.0000" ScaleY="0.9149" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.5019" Y="0.9109" />
+            <PreSize X="0.1274" Y="0.0680" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>

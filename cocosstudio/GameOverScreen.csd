@@ -36,30 +36,15 @@
             <PreSize X="0.1334" Y="0.2373" />
             <FileData Type="Normal" Path="GameOver.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_6" ActionTag="-936924566" Tag="27" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="-0.9333" RightMargin="534.9335" TopMargin="90.5250" BottomMargin="59.4750" Scale9Width="800" Scale9Height="600" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_6" ActionTag="-936924566" Tag="27" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="-0.8671" RightMargin="534.8673" TopMargin="90.5250" BottomMargin="59.4750" Scale9Width="800" Scale9Height="600" ctype="ImageViewObjectData">
             <Size X="799.9998" Y="600.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="399.0666" Y="359.4750" />
+            <Position X="399.1328" Y="359.4750" />
             <Scale ScaleX="2.0938" ScaleY="1.6452" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.2992" Y="0.4793" />
             <PreSize X="0.5997" Y="0.8000" />
             <FileData Type="Normal" Path="gameOver1.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Retry" ActionTag="-18158723" Tag="28" IconVisible="False" LeftMargin="677.7563" RightMargin="610.2437" TopMargin="429.0222" BottomMargin="284.9778" TouchEnable="True" FontSize="14" ButtonText="Retry" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="46.0000" Y="36.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="700.7563" Y="302.9778" />
-            <Scale ScaleX="3.6680" ScaleY="2.9628" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5253" Y="0.4040" />
-            <PreSize X="0.0345" Y="0.0480" />
-            <TextColor A="255" R="65" G="65" B="70" />
-            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="Home" ActionTag="-51643370" Tag="30" IconVisible="False" LeftMargin="678.4536" RightMargin="609.5464" TopMargin="585.9247" BottomMargin="128.0753" TouchEnable="True" FontSize="14" ButtonText="Home" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="46.0000" Y="36.0000" />
@@ -76,15 +61,16 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="scoreLabel" ActionTag="1207835130" Tag="21" IconVisible="False" LeftMargin="284.5538" RightMargin="959.4462" TopMargin="199.4261" BottomMargin="527.5739" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="90.0000" Y="23.0000" />
+          <AbstractNodeData Name="scoreLabel" ActionTag="1207835130" Tag="21" IconVisible="False" LeftMargin="281.5538" RightMargin="956.4462" TopMargin="197.9261" BottomMargin="526.0739" FontSize="20" LabelText="Text Label" OutlineSize="2" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="98.0000" Y="30.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="329.5538" Y="539.0739" />
             <Scale ScaleX="1.9556" ScaleY="3.6957" />
-            <CColor A="255" R="0" G="0" B="0" />
+            <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.2470" Y="0.7188" />
-            <PreSize X="0.0675" Y="0.0307" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
+            <PreSize X="0.0720" Y="0.0347" />
+            <FontResource Type="Normal" Path="Roboto-Bold.ttf" Plist="" />
+            <OutlineColor A="255" R="0" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
           <AbstractNodeData Name="Text_3" ActionTag="-256661699" Tag="22" IconVisible="False" LeftMargin="308.9990" RightMargin="973.0010" TopMargin="116.5012" BottomMargin="610.4988" FontSize="20" LabelText="Score" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

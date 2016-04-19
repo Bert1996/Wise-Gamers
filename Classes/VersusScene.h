@@ -22,7 +22,8 @@ private:
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
 
 	//Player1 Methods
-	void player1ResetCog(int cogNum);
+	void player1ResetCogY(int cogNum);
+	void player1ResetCogX();
 	void player1CheckForClosest();
 	void player1ScrollingBackground();
 	void player1CogCollide();
@@ -34,6 +35,7 @@ private:
 
 	//Player2 Methods
 	void player2ResetCog(int cogNum);
+	void player2ResetCogX();
 	void player2CheckForClosest();
 	void player2ScrollingBackground();
 	void player2CogCollide();

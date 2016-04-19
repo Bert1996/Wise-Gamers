@@ -18,31 +18,31 @@
           </AbstractNodeData>
           <AbstractNodeData Name="leftBack2" ActionTag="-195691863" Tag="24" IconVisible="False" RightMargin="667.0000" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="667.0000" Y="750.0000" />
-            <AnchorPoint />
-            <Position Y="750.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position Y="1500.0000" />
+            <Scale ScaleX="0.9316" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition Y="2.0000" />
+            <PreSize X="0.5000" Y="1.0000" />
+            <FileData Type="Normal" Path="backScroll.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="leftBack1" ActionTag="722508771" Tag="20" IconVisible="False" PositionPercentXEnabled="True" RightMargin="667.0000" TopMargin="0.0024" BottomMargin="-0.0024" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
+            <Size X="667.0000" Y="750.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position Y="749.9976" />
             <Scale ScaleX="0.9316" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition Y="1.0000" />
             <PreSize X="0.5000" Y="1.0000" />
             <FileData Type="Normal" Path="backScroll.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="leftBack1" ActionTag="722508771" Tag="20" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="0.0271" RightMargin="666.9729" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="rightBack1" ActionTag="1422602622" Tag="23" IconVisible="False" LeftMargin="712.9932" RightMargin="-45.9932" TopMargin="0.0023" BottomMargin="-0.0023" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="667.0000" Y="750.0000" />
-            <AnchorPoint />
-            <Position X="0.0271" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position X="712.9932" Y="749.9977" />
             <Scale ScaleX="0.9316" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" />
-            <PreSize X="0.5000" Y="1.0000" />
-            <FileData Type="Normal" Path="backScroll.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="rightBack1" ActionTag="1422602622" Tag="23" IconVisible="False" LeftMargin="712.9924" RightMargin="-45.9924" TopMargin="-0.0001" BottomMargin="0.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
-            <Size X="667.0000" Y="750.0000" />
-            <AnchorPoint />
-            <Position X="712.9924" Y="0.0000" />
-            <Scale ScaleX="0.9316" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5345" Y="0.0000" />
+            <PrePosition X="0.5345" Y="1.0000" />
             <PreSize X="0.5000" Y="1.0000" />
             <FileData Type="Normal" Path="backScroll.png" Plist="" />
           </AbstractNodeData>
@@ -56,13 +56,13 @@
             <PreSize X="0.0750" Y="1.0000" />
             <FileData Type="Normal" Path="Panel.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="rightBack2" ActionTag="1652398646" Tag="25" IconVisible="False" LeftMargin="712.9916" RightMargin="-45.9916" TopMargin="-749.9999" BottomMargin="749.9999" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="rightBack2" ActionTag="1652398646" Tag="25" IconVisible="False" LeftMargin="712.9916" RightMargin="-45.9917" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="667.0000" Y="750.0000" />
-            <AnchorPoint />
-            <Position X="712.9916" Y="749.9999" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position X="712.9916" Y="1500.0000" />
             <Scale ScaleX="0.9316" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5345" Y="1.0000" />
+            <PrePosition X="0.5345" Y="2.0000" />
             <PreSize X="0.5000" Y="1.0000" />
             <FileData Type="Normal" Path="backScroll.png" Plist="" />
           </AbstractNodeData>
@@ -77,13 +77,13 @@
             <FileData Type="Normal" Path="cog.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cog4" ActionTag="-359471313" Tag="46" IconVisible="False" LeftMargin="818.5142" RightMargin="311.4858" TopMargin="-1385.7275" BottomMargin="1931.7274" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cog4" ActionTag="-359471313" Tag="46" IconVisible="False" LeftMargin="718.3229" RightMargin="411.6771" TopMargin="-1037.3047" BottomMargin="1583.3047" ctype="SpriteObjectData">
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="920.5142" Y="2033.7274" />
+            <Position X="820.3229" Y="1685.3047" />
             <Scale ScaleX="0.3000" ScaleY="0.3000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6900" Y="2.7116" />
+            <PrePosition X="0.6149" Y="2.2471" />
             <PreSize X="0.1529" Y="0.2720" />
             <FileData Type="Normal" Path="cog.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
@@ -110,13 +110,13 @@
             <FileData Type="Normal" Path="cog.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cog2" ActionTag="1757430011" Tag="27" IconVisible="False" LeftMargin="159.0906" RightMargin="970.9094" TopMargin="-1375.3008" BottomMargin="1921.3009" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cog2" ActionTag="1757430011" Tag="27" IconVisible="False" LeftMargin="58.9237" RightMargin="1071.0763" TopMargin="-1026.8781" BottomMargin="1572.8781" ctype="SpriteObjectData">
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="261.0906" Y="2023.3009" />
+            <Position X="160.9237" Y="1674.8781" />
             <Scale ScaleX="0.2984" ScaleY="0.2984" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1957" Y="2.6977" />
+            <PrePosition X="0.1206" Y="2.2332" />
             <PreSize X="0.1529" Y="0.2720" />
             <FileData Type="Normal" Path="cog.jpg" Plist="" />
             <BlendFunc Src="770" Dst="771" />

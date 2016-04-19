@@ -24,31 +24,9 @@ bool GameOver::init()
 	}
 	auto rootNode = CSLoader::createNode("GameOverScreen.csb");
 
-	auto retry = rootNode->getChildByName<cocos2d::ui::Button*>("Retry");
 	auto home = rootNode->getChildByName<cocos2d::ui::Button*>("Home");
 
-	retry->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
-	{
-		//Reset Score before starting game
-		GameManager::sharedGameManager()->ResetScore();
-
-		auto mainScene = SinglePlayerScene::createScene();
-
-		switch (type)
-		{
-
-		case ui::Widget::TouchEventType::BEGAN:
-			//SoundManager::PlayButtonSound();
-			break;
-		case ui::Widget::TouchEventType::ENDED:
-
-			CCDirector::getInstance()->replaceScene(mainScene);
-
-			break;
-		default:
-			break;
-		}
-	});
+	
 
 	home->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
 	{
@@ -73,10 +51,28 @@ bool GameOver::init()
 		}
 	});
 	int score = 0;
-	__String* tempScore = __String::createWithFormat("%i", score);
-	scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
-	scoreLabel->setText(tempScore->getCString());
-	scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+
+	if (GameManager::sharedGameManager()->GetScore() == -1)
+	{
+		__String* tempScore = __String::createWithFormat("%i", score);
+		scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
+		scoreLabel->setText(tempScore->getCString());
+		scoreLabel->setString(StringUtils::format("Player 1 wins"));
+	}
+	if (GameManager::sharedGameManager()->GetScore() == -2)
+	{
+		__String* tempScore = __String::createWithFormat("%i", score);
+		scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
+		scoreLabel->setText(tempScore->getCString());
+		scoreLabel->setString(StringUtils::format("Player 2 wins"));
+	}
+	if (GameManager::sharedGameManager()->GetScore() > 0)
+	{
+		__String* tempScore = __String::createWithFormat("%i", score);
+		scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
+		scoreLabel->setText(tempScore->getCString());
+		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
+	}
 
 	addChild(rootNode);
 	return true;

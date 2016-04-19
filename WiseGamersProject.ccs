@@ -1,5 +1,5 @@
 <Solution>
-  <PropertyGroup Name="WISEGA~1" Version="2.3.3.0" Type="CocosStudio" />
+  <PropertyGroup Name="WiseGamersProject" Version="2.3.3.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
@@ -35,6 +35,10 @@
         <Image Name="summer_clouds__psd__by_macsix-d6trrl1.png" />
         <Image Name="backScroll.png" />
         <Image Name="Panel.png" />
+        <TTF Name="Roboto-Bold.ttf" />
+        <TTF Name="Roboto-Black.ttf" />
+        <Image Name="CoopBackground.png" />
+        <Image Name="SingleBackground.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

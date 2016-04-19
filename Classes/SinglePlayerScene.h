@@ -24,6 +24,7 @@ private:
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
 
 	void resetCog(int cogNum);
+	void resetCogX();
 	void CheckForClosest();
 	void ScrollingBackground();
 	void cogCollide();

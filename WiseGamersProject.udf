@@ -35,8 +35,9 @@
           <FilePathData Path="SinglePlayer.csd" />
           <FilePathData Path="Coop.csd" />
           <FilePathData Path="Menu.csd" />
+          <FilePathData Path="GameOverScreen.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="SinglePlayer.csd" />
+        <ActiveDocument Path="Versus.csd" />
       </Value>
     </Item>
   </Properties>

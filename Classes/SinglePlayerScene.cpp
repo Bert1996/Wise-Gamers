@@ -37,7 +37,7 @@ bool SinglePlayerScene::init()
 
 	//score label
 	int score = 0;
-	_scrollSpeed = 4.0f;
+	_scrollSpeed = 5.0f;
 	__String* tempScore = __String::createWithFormat("%i", score);
 	scoreLabel = (ui::Text*)rootNode->getChildByName("scoreLabel");
 	scoreLabel->setText(tempScore->getCString());
@@ -57,6 +57,8 @@ bool SinglePlayerScene::init()
 	touchListener->onTouchEnded = CC_CALLBACK_2(SinglePlayerScene::onTouchEnded, this);
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
+	resetCogX();
+
 	addChild(rootNode);
 	this->scheduleUpdate();
 
@@ -72,6 +74,7 @@ void SinglePlayerScene::update(float)
 		cog2->setRotation(r);
 		CheckForClosest();
 		cogCollide();
+
 
 		if (!_touched)
 		{
@@ -95,7 +98,7 @@ void SinglePlayerScene::update(float)
 		{
 			resetCog(2);
 		}
-		
+
 	}
 	else
 	{
@@ -103,14 +106,14 @@ void SinglePlayerScene::update(float)
 		CCDirector::getInstance()->replaceScene(mainScene);
 	}
 
-	
+
 }
 
 void SinglePlayerScene::resetCog(int cogNum)
 {
 	auto size = Director::getInstance()->getVisibleSize();
-	int leftWall = ((size.width / 100)* 30);
-	int rightWall = ((size.width / 100)* 68);
+	int leftWall = ((size.width / 100) * 30);
+	int rightWall = ((size.width / 100) * 68);
 
 	RandomHelper rand = RandomHelper();
 	int randomX = rand.random_int(leftWall, rightWall);
@@ -128,6 +131,19 @@ void SinglePlayerScene::resetCog(int cogNum)
 	}
 }
 
+void SinglePlayerScene::resetCogX()
+{
+	auto size = Director::getInstance()->getVisibleSize();
+	int leftWall = ((size.width / 100) * 30);
+	int rightWall = ((size.width / 100) * 68);
+
+	RandomHelper rand = RandomHelper();
+	int randomX = rand.random_int(leftWall, rightWall);
+
+	cog1->setPosition(randomX, cog1->getPositionY());
+	randomX = rand.random_int(leftWall, rightWall);
+	cog2->setPosition(randomX, cog2->getPositionY());
+}
 void SinglePlayerScene::CheckForClosest()
 {
 	Vec2 play = player->getPosition();
@@ -181,7 +197,7 @@ void SinglePlayerScene::cogCollide()
 	CCRect pBox = player->getBoundingBox();
 	Vec2 c1Box = cog1->getPosition();
 	Vec2 c2Box = cog2->getPosition();
-	if (pBox.intersectsCircle(c1Box,31) || pBox.intersectsCircle(c2Box,31))
+	if (pBox.intersectsCircle(c1Box, 31) || pBox.intersectsCircle(c2Box, 31))
 	{
 		_alive = false;
 		cocos2d::log("cog collide");
@@ -191,8 +207,8 @@ void SinglePlayerScene::cogCollide()
 void SinglePlayerScene::wallCollide()
 {
 	auto size = Director::getInstance()->getVisibleSize(); //27 ! 72
-	float leftWall = ((size.width / 100)* 27);
-	float rightWall = ((size.width / 100)* 72);
+	float leftWall = ((size.width / 100) * 27);
+	float rightWall = ((size.width / 100) * 72);
 
 	Vec2 play = player->getPosition();
 
@@ -229,7 +245,7 @@ void SinglePlayerScene::playerSpin()
 		//Moves player closer
 		/*if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
 		{
-			playerpos.x -= 20.0f;
+		playerpos.x -= 20.0f;
 		}*/
 
 		player->setPosition(playerpos);
@@ -251,7 +267,7 @@ void SinglePlayerScene::playerSpin()
 		//Moves player closer
 		/*if (Player.y >= point.y - 4.0f && Player.y <= point.y + 4.0f && Player.x > point.x)
 		{
-			playerpos.x -= 20.0f;
+		playerpos.x -= 20.0f;
 		}*/
 
 		player->setPosition(playerpos);
@@ -312,8 +328,6 @@ void SinglePlayerScene::ScrollingBackground()
 {
 	auto size = Director::getInstance()->getVisibleSize();
 
-	float cloudPoint = ((size.height / 100) * 60);
-	float cloudPoint2 = ((size.height / 100) * 138.39);
 	//scrolling background
 	Vec2 Bg1Pos = background->getPosition();
 	Vec2 Bg2Pos = background2->getPosition();
@@ -321,12 +335,11 @@ void SinglePlayerScene::ScrollingBackground()
 	background->setPosition(Bg1Pos.x, Bg1Pos.y - _scrollSpeed);
 	background2->setPosition(Bg2Pos.x, Bg2Pos.y - _scrollSpeed);
 
-	if (background->getPosition().y < 0)
+	if (background2->getPosition().y == size.height)
 	{
 		background->setPosition(Bg1Pos.x, size.height * 2);
 	}
-
-	if (background2->getPosition().y < 0)
+	if (background->getPosition().y == size.height)
 	{
 		background2->setPosition(Bg2Pos.x, size.height * 2);
 	}

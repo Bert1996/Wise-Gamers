@@ -22,6 +22,7 @@ public:
 
 	//Score Methods
 	void AddToScore(int increment);
+	void SetScore(int value);
 	void ResetScore();
 	int GetScore();
 
