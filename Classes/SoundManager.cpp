@@ -10,7 +10,8 @@ SoundManager::~SoundManager()
 
 void SoundManager::PlayBackGroundMusic()
 {
-	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/MainMenuSound.wav", true);
+	//CocosDenshion::SimpleAudioEngine::getInstance()->preloadBackgroundMusic("Sounds/MainMenuSound.mp3");
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/MainMenuSound.mp3", true);
 }
 
 void SoundManager::StopBackGroundMusic()

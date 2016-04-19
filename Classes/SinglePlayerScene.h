@@ -42,12 +42,16 @@ private:
 
 	Vec2 dirVector;
 	Vec2 _closeCog;
+	CCRect playerBound;
+	CCRect cog1Bound;
+	CCRect cog2Bound;
 	bool _touched;
 	bool _clockwise;
 	bool _clicked;
 	bool flipped;
 	bool _alive;
 	int _cogNumber;
+	float cogWdith;
 	float _scrollSpeed;
 	float r = 0;
 

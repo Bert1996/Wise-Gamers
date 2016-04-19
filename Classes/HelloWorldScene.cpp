@@ -50,7 +50,7 @@ bool HelloWorld::init()
 		GameManager::sharedGameManager()->ResetScore();
 
 		auto mainScene = SinglePlayerScene::createScene();
-
+		
 		switch (type)
 		{
 

@@ -47,7 +47,7 @@ bool CoopScene::init()
 	player1dirVector = Vec2(0.0f, 0.0f);
 	_player1closeCog = cog1->getPosition();
 	_player1scrollSpeed = 5.0f;
-
+	cogWdith = cog1->getContentSize().height / 4;
 	GameManager::sharedGameManager()->ResetScore();
 	// Touch Listener
 	auto touchListener = EventListenerTouchOneByOne::create();
@@ -223,15 +223,11 @@ void CoopScene::player1CheckForClosest()
 
 void CoopScene::player1CogCollide()
 {
-	CCRect pBox = player1->getBoundingBox();
-	Vec2 c1Box = cog1->getPosition();
-	Vec2 c2Box = cog2->getPosition();
-	Vec2 c3Box = cog3->getPosition();
+	Vec2 pBox = player1->getPosition();
 
-	if (pBox.intersectsCircle(c1Box, 31) || pBox.intersectsCircle(c2Box, 31) || pBox.intersectsCircle(c3Box, 31))
+	if (pBox.x > _player1closeCog.x - cogWdith && pBox.x < _player1closeCog.x + cogWdith && pBox.y > _player1closeCog.y - cogWdith && pBox.y < _player1closeCog.y + cogWdith)
 	{
 		_player1alive = false;
-		cocos2d::log("cog collide");
 	}
 }
 

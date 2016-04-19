@@ -51,7 +51,7 @@ bool VersusScene::init()
 	player2 = (Sprite*)rootNode->getChildByName("player2");
 	background3 = (Sprite*)rootNode->getChildByName("rightBack1");
 	background4 = (Sprite*)rootNode->getChildByName("rightBack2");
-
+	cogWdith = cog1->getContentSize().height / 4;
 	//Varable Inits
 	_player2touched = false;
 	_player2clicked = false;
@@ -252,13 +252,10 @@ void VersusScene::player1CheckForClosest()
 
 void VersusScene::player1CogCollide()
 {
-	CCRect pBox = player1->getBoundingBox();
-	Vec2 c1Box = cog1->getPosition();
-	Vec2 c2Box = cog2->getPosition();
-	if (pBox.intersectsCircle(c1Box, 31) || pBox.intersectsCircle(c2Box, 31))
+	Vec2 pBox = player1->getPosition();
+	if (pBox.x > _player1closeCog.x - cogWdith && pBox.x < _player1closeCog.x + cogWdith && pBox.y > _player1closeCog.y - cogWdith && pBox.y < _player1closeCog.y + cogWdith)
 	{
 		_player1alive = false;
-		cocos2d::log("cog collide");
 	}
 }
 
@@ -474,13 +471,10 @@ void VersusScene::player2CheckForClosest()
 
 void VersusScene::player2CogCollide()
 {
-	CCRect pBox = player2->getBoundingBox();
-	Vec2 c1Box = cog3->getPosition();
-	Vec2 c2Box = cog4->getPosition();
-	if (pBox.intersectsCircle(c1Box, 31) || pBox.intersectsCircle(c2Box, 31))
+	Vec2 pBox = player2->getPosition();
+	if (pBox.x > _player2closeCog.x - cogWdith && pBox.x < _player2closeCog.x + cogWdith && pBox.y > _player2closeCog.y - cogWdith && pBox.y < _player2closeCog.y + cogWdith)
 	{
 		_player2alive = false;
-		cocos2d::log("cog collide");
 	}
 }
 

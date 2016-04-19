@@ -50,6 +50,6 @@ private:
 	int _player1cogNumber;
 	float _player1scrollSpeed;
 	float r = 0;
-
+	float cogWdith;
 	cocos2d::Sprite* cog3;
 };

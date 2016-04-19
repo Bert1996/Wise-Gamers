@@ -63,7 +63,7 @@ private:
 	int _player1cogNumber;
 	float _player1scrollSpeed;
 	float r = 0;
-
+	float cogWdith;
 	//Player2
 	cocos2d::Sprite* background3;
 	cocos2d::Sprite* background4;

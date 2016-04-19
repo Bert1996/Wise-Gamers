@@ -50,7 +50,7 @@ bool SinglePlayerScene::init()
 	_cogNumber = 0;
 	dirVector = Vec2(0.0f, 0.0f);
 	_closeCog = cog1->getPosition();
-
+	cogWdith = cog1->getContentSize().height / 4;
 	// Touch Listener
 	auto touchListener = EventListenerTouchOneByOne::create();
 	touchListener->onTouchBegan = CC_CALLBACK_2(SinglePlayerScene::onTouchBegan, this);
@@ -194,14 +194,14 @@ void SinglePlayerScene::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* even
 
 void SinglePlayerScene::cogCollide()
 {
-	CCRect pBox = player->getBoundingBox();
-	Vec2 c1Box = cog1->getPosition();
-	Vec2 c2Box = cog2->getPosition();
-	if (pBox.intersectsCircle(c1Box, 31) || pBox.intersectsCircle(c2Box, 31))
+	Vec2 pBox = player->getPosition();
+	
+	if (pBox.x > _closeCog.x - cogWdith && pBox.x < _closeCog.x + cogWdith && pBox.y > _closeCog.y - cogWdith && pBox.y < _closeCog.y + cogWdith)
 	{
 		_alive = false;
-		cocos2d::log("cog collide");
 	}
+
+	
 }
 
 void SinglePlayerScene::wallCollide()
@@ -355,3 +355,4 @@ void SinglePlayerScene::SetRobotRotation()
 
 	player->setRotation(-angle);
 }
+
