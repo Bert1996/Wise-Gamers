@@ -59,6 +59,16 @@ bool GameOver::init()
 		scoreLabel->setText(tempScore->getCString());
 		scoreLabel->setString(StringUtils::format("Player 1 wins"));
 
+		first = (ui::Text*)rootNode->getChildByName("first");
+
+		sec = (ui::Text*)rootNode->getChildByName("sec");
+
+		third = (ui::Text*)rootNode->getChildByName("third");
+
+		fourth = (ui::Text*)rootNode->getChildByName("fourth");
+
+		fifth = (ui::Text*)rootNode->getChildByName("fifth");
+
 		first->setOpacity(0);
 		sec->setOpacity(0);
 		third->setOpacity(0);
@@ -80,12 +90,6 @@ bool GameOver::init()
 		scoreLabel->setString(StringUtils::format("%d", GameManager::sharedGameManager()->GetScore()));
 		UpdateHighScores();
 
-		first->setOpacity(255);
-		sec->setOpacity(255);
-		third->setOpacity(255);
-		fourth->setOpacity(255);
-		fifth->setOpacity(255);
-		
 		first = (ui::Text*)rootNode->getChildByName("first");
 		first->setText(tempScore->getCString());
 		first->setString(StringUtils::format("%d", (int)cocos2d::UserDefault::getInstance()->getFloatForKey("first")));
@@ -105,6 +109,12 @@ bool GameOver::init()
 		fifth = (ui::Text*)rootNode->getChildByName("fifth");
 		fifth->setText(tempScore->getCString());
 		fifth->setString(StringUtils::format("%d", (int)cocos2d::UserDefault::getInstance()->getFloatForKey("fifth")));
+
+		first->setOpacity(255);
+		sec->setOpacity(255);
+		third->setOpacity(255);
+		fourth->setOpacity(255);
+		fifth->setOpacity(255);
 	}
 
 	addChild(rootNode);
@@ -140,16 +150,22 @@ bool GameOver::UpdateHighScores()
 	}
 	if (score > sec)
 	{
+		cocos2d::UserDefault::getInstance()->setFloatForKey("fifth", fourth);
+		cocos2d::UserDefault::getInstance()->setFloatForKey("fourth", third);
+		cocos2d::UserDefault::getInstance()->setFloatForKey("third", sec);
 		cocos2d::UserDefault::getInstance()->setFloatForKey("sec", score);
 		return true;
 	}
 	if (score > third)
 	{
+		cocos2d::UserDefault::getInstance()->setFloatForKey("fifth", fourth);
+		cocos2d::UserDefault::getInstance()->setFloatForKey("fourth", third);
 		cocos2d::UserDefault::getInstance()->setFloatForKey("third", score);
 		return true;
 	}
 	if (score > fourth)
 	{
+		cocos2d::UserDefault::getInstance()->setFloatForKey("fifth", fourth);
 		cocos2d::UserDefault::getInstance()->setFloatForKey("fourth", score);
 		return true;
 	}

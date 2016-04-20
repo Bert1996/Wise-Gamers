@@ -34,7 +34,6 @@ bool SinglePlayerScene::init()
 	player = (Sprite*)rootNode->getChildByName("player");
 	background = (Sprite*)rootNode->getChildByName("labBackground1");
 	background2 = (Sprite*)rootNode->getChildByName("labBackground2");
-	help = (Sprite*)rootNode->getChildByName("Image_1");
 
 	//score label
 	int score = 0;
@@ -59,29 +58,17 @@ bool SinglePlayerScene::init()
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
 
 	resetCogX();
-
 	addChild(rootNode);
 	this->scheduleUpdate();
-
 	
-	if (!cocos2d::UserDefault::getInstance()->getBoolForKey("tut"))
-	{
-		cocos2d::UserDefault::getInstance()->setBoolForKey("tut", true);
-		_tutorial = false;
-	}
-	else
-	{
-		_tutorial = true;
-		help->setOpacity(0);
-	}
+	
 	
 	return true;
 }
 
 void SinglePlayerScene::update(float)
 {
-	if (_tutorial)
-	{
+	
 		if (_alive)
 		{
 			r++;
@@ -121,7 +108,6 @@ void SinglePlayerScene::update(float)
 			auto mainScene = GameOver::createScene();
 			CCDirector::getInstance()->replaceScene(mainScene);
 		}
-	}
 
 }
 
@@ -185,8 +171,7 @@ void SinglePlayerScene::CheckForClosest()
 
 bool SinglePlayerScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
 	cocos2d::log("touch began");
-	if (_tutorial)
-	{
+	
 		if (player->getPosition().x > _closeCog.x)
 		{
 			_clockwise = false;
@@ -200,12 +185,8 @@ bool SinglePlayerScene::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* even
 			_touched = true;
 
 		_clicked = true;
-	}
-	else
-	{
-		_tutorial = cocos2d::UserDefault::getInstance()->getBoolForKey("tut");
-		help->setOpacity(0);
-	}
+	
+	
 	return true;
 }
 

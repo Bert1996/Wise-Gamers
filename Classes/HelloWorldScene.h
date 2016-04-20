@@ -17,7 +17,7 @@ public:
     virtual bool init();
 	void update(float)override;
 	cocos2d::Sprite* cog;
-
+	cocos2d::Sprite* helpBox;
 
 	float r;
 

@@ -54,7 +54,6 @@ private:
 	bool _clicked;
 	bool flipped;
 	bool _alive;
-	bool _tutorial;
 	int _cogNumber;
 	float cogWdith;
 	float _scrollSpeed;

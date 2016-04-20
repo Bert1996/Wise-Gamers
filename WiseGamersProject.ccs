@@ -40,6 +40,9 @@
         <Image Name="CoopBackground.png" />
         <Image Name="SingleBackground.png" />
         <Image Name="help.png" />
+        <Image Name="questionMark.png" />
+        <Image Name="MenuRobot.png" />
+        <Image Name="Sky.png" />
       </RootFolder>
     </Group>
   </SolutionFolder>

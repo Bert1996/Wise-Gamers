@@ -38,11 +38,23 @@ bool HelloWorld::init()
 	
 	//Sprites
 	cog = (Sprite*)rootNode->getChildByName("cog");
-
+	helpBox = (Sprite*)rootNode->getChildByName("helpBox");
 	//Main Menu Buttons
 	auto SinglePlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("SinglePlayer");
 	auto CoopPlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("Co-op");
 	auto VersusPlayerButton = rootNode->getChildByName<cocos2d::ui::Button*>("Versus");
+	auto helpBut = rootNode->getChildByName<cocos2d::ui::Button*>("helpMark");
+
+	helpBut->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+	{
+		if (helpBox->getOpacity() == 0)
+		{
+			helpBox->setOpacity(255);
+		}
+		else {
+			helpBox->setOpacity(0);
+		}
+	});
 
 	SinglePlayerButton->addTouchEventListener([&](Ref* sender, cocos2d::ui::Widget::TouchEventType type)
 	{

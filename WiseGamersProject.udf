@@ -3,7 +3,7 @@
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="VS" />
-        <IsLastPublish Value="True" />
+        <IsLastPublish Value="False" />
         <LastRunType Value="Android" />
       </Value>
     </Item>
@@ -37,7 +37,7 @@
           <FilePathData Path="Menu.csd" />
           <FilePathData Path="GameOverScreen.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="GameOverScreen.csd" />
+        <ActiveDocument Path="Menu.csd" />
       </Value>
     </Item>
   </Properties>

@@ -6,15 +6,25 @@
       <ObjectData Name="Scene" Tag="18" ctype="GameNodeObjectData">
         <Size X="1334.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="Image_3" ActionTag="336596297" Tag="40" IconVisible="False" Scale9Width="3840" Scale9Height="2560" ctype="ImageViewObjectData">
-            <Size X="1334.0000" Y="750.0000" />
+          <AbstractNodeData Name="Image_3_0" ActionTag="-1399761189" Tag="57" IconVisible="False" LeftMargin="867.1514" RightMargin="153.8486" TopMargin="5.1315" BottomMargin="244.8685" Scale9Width="313" Scale9Height="500" ctype="ImageViewObjectData">
+            <Size X="313.0000" Y="500.0000" />
             <AnchorPoint ScaleY="1.0000" />
-            <Position Y="750.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="867.1514" Y="744.8685" />
+            <Scale ScaleX="1.0000" ScaleY="1.4847" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition Y="1.0000" />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="summer_clouds__psd__by_macsix-d6trrl1.png" Plist="" />
+            <PrePosition X="0.6500" Y="0.9932" />
+            <PreSize X="0.2346" Y="0.6667" />
+            <FileData Type="Normal" Path="Sky.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Image_3" ActionTag="336596297" Tag="40" IconVisible="False" LeftMargin="157.7657" RightMargin="863.2344" TopMargin="8.1427" BottomMargin="241.8573" Scale9Width="313" Scale9Height="500" ctype="ImageViewObjectData">
+            <Size X="313.0000" Y="500.0000" />
+            <AnchorPoint ScaleY="1.0000" />
+            <Position X="157.7657" Y="741.8573" />
+            <Scale ScaleX="1.0000" ScaleY="1.4847" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.1183" Y="0.9891" />
+            <PreSize X="0.2346" Y="0.6667" />
+            <FileData Type="Normal" Path="Sky.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="leftBack2" ActionTag="-195691863" Tag="24" IconVisible="False" RightMargin="667.0000" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="667.0000" Y="750.0000" />
@@ -56,7 +66,7 @@
             <PreSize X="0.0750" Y="1.0000" />
             <FileData Type="Normal" Path="Panel.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="rightBack2" ActionTag="1652398646" Tag="25" IconVisible="False" LeftMargin="712.9916" RightMargin="-45.9917" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="rightBack2" ActionTag="1652398646" Tag="25" IconVisible="False" LeftMargin="712.9916" RightMargin="-45.9916" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="202" Scale9Height="320" ctype="ImageViewObjectData">
             <Size X="667.0000" Y="750.0000" />
             <AnchorPoint ScaleY="1.0000" />
             <Position X="712.9916" Y="1500.0000" />

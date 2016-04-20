@@ -6,15 +6,15 @@
       <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="1334.0000" Y="750.0000" />
         <Children>
-          <AbstractNodeData Name="back" ActionTag="1861135356" Tag="41" IconVisible="False" Scale9Width="3840" Scale9Height="2560" ctype="ImageViewObjectData">
-            <Size X="1334.0000" Y="750.0000" />
+          <AbstractNodeData Name="back" ActionTag="1861135356" Tag="41" IconVisible="False" LeftMargin="512.3383" RightMargin="508.6617" TopMargin="1.6357" BottomMargin="248.3643" Scale9Width="313" Scale9Height="500" ctype="ImageViewObjectData">
+            <Size X="313.0000" Y="500.0000" />
             <AnchorPoint ScaleY="1.0000" />
-            <Position Y="750.0000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="512.3383" Y="748.3643" />
+            <Scale ScaleX="1.0000" ScaleY="1.4977" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition Y="1.0000" />
-            <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="summer_clouds__psd__by_macsix-d6trrl1.png" Plist="" />
+            <PrePosition X="0.3841" Y="0.9978" />
+            <PreSize X="0.2346" Y="0.6667" />
+            <FileData Type="Normal" Path="Sky.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="back2" ActionTag="1335449779" Tag="45" IconVisible="False" TopMargin="-750.0000" BottomMargin="750.0000" Scale9Width="1334" Scale9Height="750" ctype="ImageViewObjectData">
             <Size X="1334.0000" Y="750.0000" />
@@ -36,7 +36,7 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="CoopBackground.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="player" ActionTag="-1323363850" Tag="25" IconVisible="False" LeftMargin="334.1480" RightMargin="954.8519" TopMargin="645.5150" BottomMargin="19.4850" ctype="SpriteObjectData">
+          <AbstractNodeData Name="player" ActionTag="-1323363850" Tag="25" IconVisible="False" LeftMargin="334.1480" RightMargin="954.8520" TopMargin="645.5150" BottomMargin="19.4850" ctype="SpriteObjectData">
             <Size X="45.0000" Y="85.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="356.6480" Y="61.9850" />
@@ -47,10 +47,10 @@
             <FileData Type="Normal" Path="Resources/Robot1.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cog" ActionTag="-680327513" Tag="29" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="544.3721" RightMargin="585.6279" TopMargin="-263.9987" BottomMargin="809.9987" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cog" ActionTag="-680327513" Tag="29" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="544.3230" RightMargin="585.6770" TopMargin="-264.0000" BottomMargin="810.0000" ctype="SpriteObjectData">
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="646.3721" Y="911.9987" />
+            <Position X="646.3230" Y="912.0000" />
             <Scale ScaleX="0.3000" ScaleY="0.3000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4845" Y="1.2160" />

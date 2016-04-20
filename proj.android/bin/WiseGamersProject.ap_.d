@@ -26,14 +26,17 @@ D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\gameOver1.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\GameOverScreen.csb \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\GameOverScreen.csd.csb \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\HelloWorld.png \
+D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\help.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\labBackground2.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Level 2.csb \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Level 3.csb \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Line.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\MainScene.csb \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Menu.csb \
+D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\MenuRobot.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Panel.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\pressedbutton.png \
+D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\questionMark.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Resources \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Robot1.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\robot2.jpg \
@@ -42,6 +45,7 @@ D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Roboto-Bold.ttf \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\secret_key.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\SingleBackground.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\SinglePlayer.csb \
+D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Sky.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Sounds \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\summer_clouds__psd__by_macsix-d6trrl1.png \
 D:\Documents\GitHub\Wise-Gamers\proj.android\assets\res\Versus.csb \

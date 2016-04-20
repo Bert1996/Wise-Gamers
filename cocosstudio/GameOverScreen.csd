@@ -16,15 +16,15 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="Resources/lab.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_2" ActionTag="1240152014" Tag="25" RotationSkewX="-25.8355" RotationSkewY="-25.8394" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="596.0980" RightMargin="-144.0054" TopMargin="91.1625" BottomMargin="-122.4375" Scale9Width="677" Scale9Height="800" ctype="ImageViewObjectData">
-            <Size X="881.9073" Y="781.2750" />
+          <AbstractNodeData Name="Image_2" ActionTag="1240152014" Tag="25" RotationSkewX="-25.8688" RotationSkewY="-25.8322" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="990.5320" RightMargin="250.4680" TopMargin="400.8062" BottomMargin="187.1938" Scale9Width="93" Scale9Height="162" ctype="ImageViewObjectData">
+            <Size X="93.0000" Y="162.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="1037.0516" Y="268.2000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="1037.0320" Y="268.1938" />
+            <Scale ScaleX="4.5864" ScaleY="4.6496" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.7774" Y="0.3576" />
-            <PreSize X="0.6611" Y="1.0417" />
-            <FileData Type="Normal" Path="robot2.jpg" Plist="" />
+            <PreSize X="0.0697" Y="0.2160" />
+            <FileData Type="Normal" Path="MenuRobot.png" Plist="" />
           </AbstractNodeData>
           <AbstractNodeData Name="Image_5" ActionTag="-127592482" Tag="26" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="947.0066" RightMargin="209.0378" TopMargin="86.8875" BottomMargin="485.1375" Scale9Width="178" Scale9Height="178" ctype="ImageViewObjectData">
             <Size X="177.9556" Y="177.9750" />

@@ -16,20 +16,20 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="Resources/lab.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_2" ActionTag="447442143" Tag="19" RotationSkewX="-25.8355" RotationSkewY="-25.8394" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="596.0980" RightMargin="-144.0054" TopMargin="91.1625" BottomMargin="-122.4375" Scale9Width="677" Scale9Height="800" ctype="ImageViewObjectData">
-            <Size X="881.9073" Y="781.2750" />
+          <AbstractNodeData Name="Image_2" ActionTag="447442143" Tag="19" RotationSkewX="-25.8314" RotationSkewY="-25.8343" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="1021.4170" RightMargin="219.5830" TopMargin="379.6641" BottomMargin="208.3359" Scale9Width="93" Scale9Height="162" ctype="ImageViewObjectData">
+            <Size X="93.0000" Y="162.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="1037.0516" Y="268.2000" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="1067.9170" Y="289.3359" />
+            <Scale ScaleX="4.4578" ScaleY="4.5778" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7774" Y="0.3576" />
-            <PreSize X="0.6611" Y="1.0417" />
-            <FileData Type="Normal" Path="robot2.jpg" Plist="" />
+            <PrePosition X="0.8005" Y="0.3858" />
+            <PreSize X="0.0697" Y="0.2160" />
+            <FileData Type="Normal" Path="MenuRobot.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="cog" ActionTag="318866030" Tag="18" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="440.1058" RightMargin="689.8942" TopMargin="411.1779" BottomMargin="134.8221" ctype="SpriteObjectData">
+          <AbstractNodeData Name="cog" ActionTag="318866030" Tag="18" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="440.1376" RightMargin="689.8624" TopMargin="411.1500" BottomMargin="134.8500" ctype="SpriteObjectData">
             <Size X="204.0000" Y="204.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="542.1058" Y="236.8221" />
+            <Position X="542.1376" Y="236.8500" />
             <Scale ScaleX="0.4484" ScaleY="0.4626" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.4064" Y="0.3158" />
@@ -79,6 +79,31 @@
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
             <PressedFileData Type="Normal" Path="pressedbutton.png" Plist="" />
             <NormalFileData Type="Normal" Path="Button1.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="helpBox" ActionTag="1879969914" Alpha="0" Tag="38" IconVisible="False" LeftMargin="-87.0709" RightMargin="621.0709" TopMargin="273.1756" BottomMargin="-123.1756" Scale9Width="800" Scale9Height="600" ctype="ImageViewObjectData">
+            <Size X="800.0000" Y="600.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="312.9291" Y="176.8244" />
+            <Scale ScaleX="1.3939" ScaleY="1.4433" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2346" Y="0.2358" />
+            <PreSize X="0.5997" Y="0.8000" />
+            <FileData Type="Normal" Path="help.png" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="helpMark" ActionTag="889242708" Tag="47" IconVisible="False" LeftMargin="-189.3272" RightMargin="1011.3271" TopMargin="-187.5013" BottomMargin="425.5013" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="482" Scale9Height="490" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="512.0000" Y="512.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="66.6728" Y="681.5013" />
+            <Scale ScaleX="0.2058" ScaleY="0.1931" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.0500" Y="0.9087" />
+            <PreSize X="0.3838" Y="0.6827" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Normal" Path="questionMark.png" Plist="" />
+            <NormalFileData Type="Normal" Path="questionMark.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
